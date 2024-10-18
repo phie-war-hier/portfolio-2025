@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="nav-container">
-            <div id="navShow" class="nav-element top active" onclick="navigateToShow()">
+            <div id="navShow" class="nav-element top active visible" onclick="navigateToShow()">
                 <h4>Sophie Humbert</h4>
                 <div class="wrapper-right">
                     <div class="socials">
@@ -23,10 +23,10 @@
                     <!--<button class="btn" onclick="changeLang()">De</button>-->
                 </div>
             </div>
-            <div id="navProjects" class="nav-element top" onclick="navigateToProjects()">
+            <div id="navProjectsTop" class="nav-element top notVisible" onclick="navigateToProjects()">
                 <h4>Projects</h4>
             </div>
-            <div id="navExperience" class="nav-element top" onclick="navigateToExperience()">
+            <div id="navExperienceTop" class="nav-element top notVisible" onclick="navigateToExperience()">
                 <h4>Experience</h4>
             </div>
         </nav>
@@ -74,10 +74,10 @@
     </main>
     <footer>
         <nav class="nav-container">
-            <div class="nav-element bottom inactive" onclick="navigateToProjects()">
+            <div id="navProjectsBottom" class="nav-element bottom inactive visible" onclick="navigateToProjects()">
                 <h4>Projects</h4>
             </div>
-            <div class="nav-element bottom inactive" onclick="navigateToExperience()">
+            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
                 <h4>Experience</h4>
             </div>
         </nav>

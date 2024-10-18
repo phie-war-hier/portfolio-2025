@@ -10,8 +10,15 @@ function navigateToShow() {
     document.getElementById('experience').style.display = "none"; 
 
     document.getElementById('navShow').classList.add('active');
-    document.getElementById('navProjects').classList.remove('active');
-    document.getElementById('navExperience').classList.remove('active'); 
+    document.getElementById('navProjectsTop').classList.remove('active');
+    document.getElementById('navExperienceTop').classList.remove('active');
+    
+    document.getElementById('navProjectsTop').classList.remove('visible');
+    document.getElementById('navExperienceTop').classList.remove('visible'); 
+
+    document.getElementById('navProjectsBottom').classList.remove('notVisible');
+    document.getElementById('navExperienceBottom').classList.remove('notVisible');
+
 }
 
 function navigateToProjects() {
@@ -20,8 +27,18 @@ function navigateToProjects() {
     document.getElementById('experience').style.display = "none";
 
     document.getElementById('navShow').classList.remove('active');
-    document.getElementById('navProjects').classList.add('active');
-    document.getElementById('navExperience').classList.remove('active');
+    document.getElementById('navProjectsTop').classList.add('active');
+    document.getElementById('navExperienceTop').classList.remove('active');
+
+    document.getElementById('navProjectsTop').classList.add('visible');
+    document.getElementById('navExperienceTop').classList.remove('visible')
+    document.getElementById('navExperienceTop').classList.add('notVisible');
+
+    document.getElementById('navProjectsBottom').classList.remove('visible');
+    document.getElementById('navProjectsBottom').classList.add('notVisible');
+
+    document.getElementById('navExperienceBottom').classList.remove('notVisible');
+    document.getElementById('navExperienceBottom').classList.add('visible');
 }
 
 function navigateToExperience() {
@@ -30,8 +47,16 @@ function navigateToExperience() {
     document.getElementById('experience').style.display = "flex";
 
     document.getElementById('navShow').classList.remove('active');
-    document.getElementById('navProjects').classList.remove('active');
-    document.getElementById('navExperience').classList.add('active');
+    document.getElementById('navProjectsTop').classList.remove('active');
+    document.getElementById('navExperienceTop').classList.add('active');
+
+    document.getElementById('navProjectsTop').classList.add('visible');
+    document.getElementById('navExperienceTop').classList.add('visible'); 
+
+
+    document.getElementById('navProjectsBottom').classList.add('notVisible');
+    document.getElementById('navExperienceBottom').classList.remove('visible');
+    document.getElementById('navExperienceBottom').classList.add('notVisible');
 }
 
 

@@ -54,13 +54,21 @@ footer {
 
 /* Main navigation */
 
+.notVisible {
+    display: none;
+    
+}
+
+.visible {
+    display: flex;
+}
+
 .nav-container {
     display: flex;
     flex-direction: column;
 }
 
-.nav-element {
-    display: flex;
+.nav-element { 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +89,7 @@ footer {
 }
 
 .active {
+    
     background-color: var(--background-color);
 }
 
@@ -133,7 +142,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-block-end: 6rem;
+    padding-block-end: 4rem;
 }
 
 #show {

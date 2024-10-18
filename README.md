@@ -1,2 +1,2 @@
-# portfolio-2024
+# Portfolio 2024
  A new version of my porfolio with dynamic JS elements

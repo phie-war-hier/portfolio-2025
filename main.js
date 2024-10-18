@@ -43,25 +43,67 @@ function navigateToExperience() {
 
 const projectsEntries = [
     {
-        projectCoverimage: "img/hdil-smartroots-coverbild-400.webp",
+        projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["User Experience", "Interaction"],
         projectYear: 2023,
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
     },
     {
-        projectCoverimage: "img/hdil-ar-data-experience-point-coverbild-400.webp",
+        projectCoverimage: "img/hdil-ar-data-experience-point-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["Data Vis", "Interaction"],
         projectYear: 2024,
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
     },
     {
-        projectCoverimage: "img/sh-irrlicht-coverbild-400.webp",
+        projectCoverimage: "img/sh-irrlicht-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["Interaction", "Data Vis", "Installation"],
         projectYear: 2024,
         projectDescription: "Irrlicht - A data-supported, interactive and immersive installation to raise awareness of the issue of light pollution."
+    },
+    {
+        projectCoverimage: "img/sh-rocketdeployer-coverbild-800.webp",
+        alt: "User Experience",
+        projectTag: ["Interaction", "User Experience"],
+        projectYear: 2023,
+        projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
+    },
+    {
+        projectCoverimage: "img/sh-planta-coverbild-800.webp",
+        alt: "User Experience",
+        projectTag: ["Interaction", "Installation"],
+        projectYear: 2022,
+        projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
+    },
+    {
+        projectCoverimage: "img/sh-marbalance-coverbild-800.webp",
+        alt: "User Experience",
+        projectTag: ["Interaction", "Game"],
+        projectYear: 2023,
+        projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
+    },
+    {
+        projectCoverimage: "img/sh-tetrisroom-coverbild-800.webp",
+        alt: "User Experience",
+        projectTag: ["3D", "Game"],
+        projectYear: 2024,
+        projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
+    },
+    {
+        projectCoverimage: "img/sh-deep-blue-coverbild-1080.webp",
+        alt: "User Experience",
+        projectTag: ["3D", "Motion"],
+        projectYear: 2023,
+        projectDescription: "“deep blue” is an animation created with the 3D software Blender."
+    },
+    {
+        projectCoverimage: "img/sh-unterwasserlaerm-coverbild-800.webp",
+        alt: "User Experience",
+        projectTag: ["Installation", "Data Vis"],
+        projectYear: 2023,
+        projectDescription: "A concept for an installation to raise awareness of the issue of underwater noise."
     }
 ];
 

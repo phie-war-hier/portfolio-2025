@@ -8,18 +8,30 @@ function navigateToShow() {
     document.getElementById('show').style.display = "block";
     document.getElementById('projects').style.display = "none";
     document.getElementById('experience').style.display = "none"; 
+
+    document.getElementById('navShow').classList.add('active');
+    document.getElementById('navProjects').classList.remove('active');
+    document.getElementById('navExperience').classList.remove('active'); 
 }
 
 function navigateToProjects() {
     document.getElementById('show').style.display = "none";
     document.getElementById('projects').style.display = "flex";
     document.getElementById('experience').style.display = "none";
+
+    document.getElementById('navShow').classList.remove('active');
+    document.getElementById('navProjects').classList.add('active');
+    document.getElementById('navExperience').classList.remove('active');
 }
 
 function navigateToExperience() {
     document.getElementById('show').style.display = "none";
     document.getElementById('projects').style.display = "none";
     document.getElementById('experience').style.display = "flex";
+
+    document.getElementById('navShow').classList.remove('active');
+    document.getElementById('navProjects').classList.remove('active');
+    document.getElementById('navExperience').classList.add('active');
 }
 
 
@@ -89,19 +101,39 @@ projectsEntries.forEach(entry => {
 
 const experienceEntries = [
     {
-        experienceTag: "Degree",
+        experienceTag: "Graduation",
         experienceYear: 2024,
-        experienceDescription: "Bachelor Degree in Communication Design at the Faculty of Design Mannheim"
+        experienceDescription: "Bachelor of Arts Communication Design at the Faculty of Design Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Publication",
         experienceYear: 2024,
-        experienceDescription: "AR DXP Publication with HDIL."
+        experienceDescription: "Embedded temporal data visualizations in an urban environment for casual exploration"
     },
     {
-        experienceTag: "Jobposition",
+        experienceTag: "Job position",
         experienceYear: 2024,
-        experienceDescription: "Graphic designer at HDIL."
+        experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
+    },
+    {
+        experienceTag: "Internship",
+        experienceYear: 2024,
+        experienceDescription: "Internship as UX Designer at sovanta AG in Heidelberg"
+    },
+    {
+        experienceTag: "Job position",
+        experienceYear: 2023,
+        experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
+    },
+    {
+        experienceTag: "Event",
+        experienceYear: 2022,
+        experienceDescription: "Captcha Design Festival at the Faculty of Design Mannheim"
+    },
+    {
+        experienceTag: "Job position",
+        experienceYear: 2022,
+        experienceDescription: "Working student in sales at Markthaus Mannheim gGmbH"
     }
 ];
 

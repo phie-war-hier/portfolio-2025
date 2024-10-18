@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio von phie</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-container">
-            <div class="nav-element top active" onclick="navigateToShow()">
+            <div id="navShow" class="nav-element top active" onclick="navigateToShow()">
                 <h4>Sophie Humbert</h4>
                 <div class="wrapper-right">
                     <div class="socials">
                         <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
-                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="icon/behance.svg"></a>
                         <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
                     </div>
-                    <button class="btn" onclick="changeLang()">De</button>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
                 </div>
             </div>
-            <div class="nav-element top inactive" onclick="navigateToProjects()">
+            <div id="navProjects" class="nav-element top" onclick="navigateToProjects()">
                 <h4>Projects</h4>
             </div>
-            <div class="nav-element top inactive" onclick="navigateToExperience()">
+            <div id="navExperience" class="nav-element top" onclick="navigateToExperience()">
                 <h4>Experience</h4>
-            </div>            
+            </div>
         </nav>
     </header>
     <main>
 
-       
+
         <div id="show" class="wrapper">
             <p>Showreel</p>
             <video></video>
@@ -38,13 +41,13 @@
         <div id="projects" class="wrapper">
             <nav class="categories">
                 <ul class="tag-container">
-                  <li><button class="btn tag">All</button></li>
-                  <li><button class="btn tag">User Experience</button></li>
-                  <li><button class="btn tag">3D</button></li>
-                  <li><button class="btn tag">Interaction</button></li>
-                  <li><button class="btn tag">Data Vis</button></li>
-                  <li><button class="btn tag">Installation</button></li>
-                  <li><button class="btn tag">Print</button></li>
+                    <li><button class="btn tag">All</button></li>
+                    <li><button class="btn tag">User Experience</button></li>
+                    <li><button class="btn tag">3D</button></li>
+                    <li><button class="btn tag">Interaction</button></li>
+                    <li><button class="btn tag">Data Vis</button></li>
+                    <li><button class="btn tag">Installation</button></li>
+                    <li><button class="btn tag">Print</button></li>
                 </ul>
             </nav>
             <div class="projects-container"></div>
@@ -52,14 +55,21 @@
         <div id="experience" class="wrapper">
             <div id="introduction">
                 <img src="img/sh-portrait-sophie-humbert-400.webp" alt="Portrait Sophie Humbert sw">
-                <p class="description">Hi :) Hier ist Phie</p>
+                <p class="description">An internship at the Mark Lotse agency got me interested in illustration,
+                    communication and web development. In 2020, I started studying communication design at the Faculty
+                    of Design in Mannheim. During my studies, I focused on interactive design, creative coding,
+                    designing spaces and how to combine these passions. In summer 2024, I successfully completed my
+                    studies with my bachelor's thesis Irrlicht.</p>
+                <br>
+                <p class="description">You want to work with me?</p>
+                <p class="description">Write me an email at <a href="mailto:sophie-humbert@posteo.de">sophie-humbert@posteo.de</a></p>
             </div>
             <div class="experience-container"></div>
         </div>
 
 
 
-    
+
 
     </main>
     <footer>
@@ -74,4 +84,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>

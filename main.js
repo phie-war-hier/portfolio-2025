@@ -146,7 +146,7 @@ const projectsEntries = [
     },
     {
         projectTitle: "Deep blue",
-        projectCoverimage: "img/sh-deep-blue-coverbild-1080.webp",
+        projectCoverimage: "img/sh-deep-blue-mushroom-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["3D", "Motion"],
         projectYear: 2022,
@@ -206,36 +206,43 @@ const experienceEntries = [
     {
         experienceTag: "Graduation",
         experienceYear: 2024,
+        experienceLink: "",
         experienceDescription: "Bachelor of Arts Communication Design at the Faculty of Design Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Publication",
         experienceYear: 2024,
+        experienceLink: "",
         experienceDescription: "Embedded temporal data visualizations in an urban environment for casual exploration"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2024,
+        experienceLink: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Internship",
         experienceYear: 2024,
+        experienceLink: "",
         experienceDescription: "Internship as UX Designer at sovanta AG in Heidelberg"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2023,
+        experienceLink: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Event",
         experienceYear: 2022,
+        experienceLink: "",
         experienceDescription: "Captcha Design Festival at the Faculty of Design Mannheim"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2022,
+        experienceLink: "",
         experienceDescription: "Working student in sales at Markthaus Mannheim gGmbH"
     }
 ];

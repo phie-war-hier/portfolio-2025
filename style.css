@@ -76,7 +76,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-inline: 1.2rem;
-    padding-block: 0.4rem;
+    padding-block: 0.4rem 0.6rem;
     height: auto;
     cursor: pointer;
     background-color: var(--second-color);
@@ -123,8 +123,13 @@ footer {
 
 /* Main part with different contents */
 
+a {
+    color: var(--main-color);
+}
 
-
+a:hover, a:active, a:visited {
+    color: var(--main-color);
+}
 
 .tag {
     padding-inline: 0.4rem;
@@ -166,7 +171,7 @@ footer {
 .categories {
     display: none;
 
-    @media (min-width: 700px) {
+    @media (min-width: 600px) {
         display: block;        
     }
 
@@ -203,6 +208,11 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .projects-element {
@@ -211,11 +221,28 @@ ul {
     gap: 0.6rem;
     border: var(--border-weight) solid var(--main-color);
     padding-block-end: 0.4rem;
+    
+
+    @media (min-width: 600px) {
+        width: 48%;
+    }
+
+    @media (min-width: 900px) {
+        width: 32%;
+    }
 }
 
 .project-coverimage {
     width: 100%;
     height: 40%;
+
+    @media (min-width: 600px) {
+        height: auto;       
+    }
+
+    @media (min-width: 900px) {
+        height: auto; 
+    }    
 }
 
 .project-tags {
@@ -243,6 +270,12 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
 }
 
 
@@ -252,6 +285,14 @@ ul {
     gap: 0.6rem;
     border: var(--border-weight) solid var(--main-color);
     padding-block: 0.4rem;
+
+    @media (min-width: 600px) {
+        width: 48%;
+    }
+
+    @media (min-width: 900px) {
+        width: 32%;
+    }
 }
 
 .experience-tags {
@@ -269,7 +310,31 @@ ul {
 }
 
 #introduction {
-    border: var(--border-weight) solid var(--main-color);
+    /*border: var(--border-weight) solid var(--main-color);*/
+    
+    @media (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        padding-inline-end: 0.4rem;
+    }
+
+    @media (min-width: 900px) {
+        width: 80%;
+        
+    }
+
+    @media (min-width: 1200px) {
+        width: 66%;
+        
+    }
+
+    .description {
+        padding-block: 0.6rem;
+
+       
+    }
+
 }
 
 

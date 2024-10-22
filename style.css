@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Epilogue-Regular";
-    src: url("../font/Epilogue-Regular.woff2");
+    src: url("font/Epilogue-Regular.woff2");
     font-style: normal;
     font-weight: normal;
 }
@@ -26,7 +26,6 @@
     hyphens: auto; 
    
 }
-
 
 
 body {

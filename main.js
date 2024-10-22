@@ -68,6 +68,7 @@ function navigateToExperience() {
 
 const projectsEntries = [
     {
+        projectPage: "projects/smartroots.html",
         projectTitle: "Smart Roots – Parking Dashboard",
         projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
@@ -79,6 +80,7 @@ const projectsEntries = [
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
     },
     {
+        projectPage: "projects/ardxp.html",
         projectTitle: "AR Data Experience Point",
         projectCoverimage: "img/hdil-ar-data-experience-point-coverbild-800.webp",
         alt: "User Experience",
@@ -90,6 +92,7 @@ const projectsEntries = [
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
     },
     {   
+        projectPage: "projects/irrlicht.html",
         projectTitle: "Irrlicht",
         projectCoverimage: "img/sh-irrlicht-coverbild-800.webp",
         alt: "User Experience",
@@ -101,6 +104,7 @@ const projectsEntries = [
         projectDescription: "Irrlicht - A data-supported, interactive and immersive installation to raise awareness of the issue of light pollution."
     },
     {
+        projectPage: "projects/rocketdeployer.html",
         projectTitle: "Rocket Deployer",
         projectCoverimage: "img/sh-rocketdeployer-coverbild-800.webp",
         alt: "User Experience",
@@ -112,6 +116,7 @@ const projectsEntries = [
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
     },
     {
+        projectPage: "projects/planta.html",
         projectTitle: "planta",
         projectCoverimage: "img/sh-planta-coverbild-800.webp",
         alt: "User Experience",
@@ -123,6 +128,7 @@ const projectsEntries = [
         projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
     },
     {
+        projectPage: "projects/marbalance.html",
         projectTitle: "Marbalance",
         projectCoverimage: "img/sh-marbalance-coverbild-800.webp",
         alt: "User Experience",
@@ -134,6 +140,7 @@ const projectsEntries = [
         projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
     },
     {
+        projectPage: "projects/tetrisroom.html",
         projectTitle: "Tetris Room",
         projectCoverimage: "img/sh-tetrisroom-coverbild-800.webp",
         alt: "User Experience",
@@ -145,6 +152,7 @@ const projectsEntries = [
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
     },
     {
+        projectPage: "projects/deepblue.html",
         projectTitle: "Deep blue",
         projectCoverimage: "img/sh-deep-blue-mushroom-coverbild-800.webp",
         alt: "User Experience",
@@ -156,6 +164,7 @@ const projectsEntries = [
         projectDescription: "“deep blue” is an animation created with the 3D software Blender."
     },
     {
+        projectPage: "projects/overheardcatastrophe.html",
         projectTitle: "Overheard catastrophe",
         projectCoverimage: "img/sh-unterwasserlaerm-coverbild-800.webp",
         alt: "User Experience",
@@ -187,10 +196,13 @@ projectsEntries.forEach(entry => {
 
     // HTML-Inhalt für den Eintrag erstellen
     entryDiv.innerHTML = `
-        <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
-        ${tagsHTML}
-        <p class="project-year">(${entry.projectYear})</p>
-        <p class="description">${entry.projectDescription}</p>
+            <a href="${entry.projectPage}">
+                <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
+                ${tagsHTML}
+                <p class="project-year">(${entry.projectYear})</p>
+                <p class="description">${entry.projectDescription}</p>
+            </a>
+       
     `;
 
     // Den Eintrag in das Portfolio-Div einfügen

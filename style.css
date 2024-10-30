@@ -475,24 +475,24 @@ ul {
 /* Scrollbar */
 
 /* Breite der Scroll-Leiste */
-.gallery::-webkit-scrollbar {
-    width: 12px; /* Breite der vertikalen Scroll-Leiste */
-    height: 12px; /* Höhe der horizontalen Scroll-Leiste */
+::-webkit-scrollbar {
+    width: 16px; /* Breite der vertikalen Scroll-Leiste */
+    height: 16px; /* Höhe der horizontalen Scroll-Leiste */
 }
 
 /* Hintergrund der Scroll-Leiste */
-.gallery::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: var(--second-color); /* Hintergrundfarbe des Scroll-Tracks */
 }
 
 /* Farbe des Scrollbalkens */
-.gallery::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--background-color); /* Farbe des Scrollbalkens */
     border: var(--border-weight) solid var(--main-color); /* Optionaler Rand für den Scrollbalken */
 }
 
 /* Hover-Effekt für den Scrollbalken */
-.gallery::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: var(--main-color); /* Farbe beim Hover über den Scrollbalken */
     cursor: grab;
 }

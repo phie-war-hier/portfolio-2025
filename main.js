@@ -78,7 +78,7 @@ const projectsEntries = [
         projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the Human Data Interaction Lab (HDIL).",
         projectPeople: [" Till Nagel", " Christoph Huber", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/smart-roots/",
-        projectLinkText: "Project Page sMArt roots at the HDIL",
+        projectLinkText: "Project sMArt roots at the HDIL",
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
     },
     {
@@ -92,7 +92,7 @@ const projectsEntries = [
         projectContext: "The AR Data Experience Point is a research project of the Human Data Interaction Lab at Mannheim University of Applied Sciences.",
         projectPeople: ["Till Nagel", "Christoph Huber", "Ekkehard Petzold", "Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/ar-dxp/",
-        projectLinkText: "Project Page AR DXP at the HDIL",
+        projectLinkText: "Project AR DXP at the HDIL",
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
     },
     {
@@ -249,8 +249,8 @@ const experienceEntries = [
 ];
 
 
-
-
+projectsEntries.sort((a, b) => b.projectYear - a.projectYear);
+experienceEntries.sort((a, b) => b.experienceYear - a.experienceYear);
 
 
 

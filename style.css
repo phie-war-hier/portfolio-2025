@@ -126,6 +126,7 @@ footer {
 
 a {
     color: var(--main-color);
+    width: 100%;
 }
 
 a:hover, a:active, a:visited {
@@ -148,7 +149,7 @@ a:hover, a:active, a:visited {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-block-end: 4rem;
+    padding-block-end: 6rem;
 }
 
 
@@ -301,6 +302,7 @@ ul {
 .description {
     padding-inline: 0.4rem;
     font-size: var(--font-size-medium);
+    
 }
 
 .gallery .description {
@@ -341,6 +343,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    width: 100%;
 }
 
 .project-detail-container {
@@ -353,6 +356,9 @@ ul {
         flex-direction: row;
     }
 }
+
+
+
 
 .gallery {
     display: flex;

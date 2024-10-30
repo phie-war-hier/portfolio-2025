@@ -256,8 +256,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const detailTitle = document.getElementById('project-detail-header')
             
             detailTitle.innerHTML = `
+                    <img src="../icon/arrow-back.svg" alt="close icon">
                     <p class="project-title">${entry.projectTitle}</p>
-                    <img src="../icon/cross.svg" alt="close icon">
+                    
             `;
         }
 

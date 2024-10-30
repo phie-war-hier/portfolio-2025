@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Humbert</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body id="project-details-page">
     <header>
-    
+        <nav class="nav-container">
+            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
+                <h4>Sophie Humbert</h4>
+                <div class="wrapper-right">
+                    <div class="socials">
+                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="../icon/behance.svg"></a>
+                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                    </div>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
+                </div>
+            </div>
+            <div id="navProjectsTop" class="nav-element top active visible" onclick="navigateToProjects()">
+                <div id="project-detail-header"> </div>
+            </div>
+        </nav>
     </header>
     <main class="wrapper">
-        <div id="project-detail-header"> </div>
-        <div class="gallery">
-            <img 
-				alt="sMArtroots smart city exhibition data dashboards buga" 
-				src="../img/hdil-smartroots-coverbild-800.webp"
-				srcset="
+        <div class="project-detail-container">
+            <div class="gallery">
+                <img alt="sMArtroots smart city exhibition data dashboards buga"
+                    src="../img/hdil-smartroots-coverbild-800.webp" srcset="
 					../img/hdil-smartroots-coverbild-400.webp 400w, 
 					../img/hdil-smartroots-coverbild-800.webp 800w, 
 					../img/hdil-smartroots-coverbild-1080.webp 1080w, 
-					../img/hdil-smartroots-coverbild-1920.webp 1920w"
-				sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw"
-            >
-            <img 
-				alt="sMArtroots smart city dashboard ui design" 
-				src="../img/hdil-smartroots-dashboard-01-1080.webp"
-				srcset="
+					../img/hdil-smartroots-coverbild-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="sMArtroots smart city dashboard ui design" src="../img/hdil-smartroots-dashboard-01-1080.webp"
+                    srcset="
 					../img/hdil-smartroots-dashboard-01-800.webp 400w, 
 					../img/hdil-smartroots-dashboard-01-1080.webp 800w, 
 					../img/hdil-smartroots-dashboard-01-1080.webp 1080w, 
 					../img/hdil-smartroots-dashboard-01-1920.webp 1920w"
-				sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw"
-            >
-            <img 
-				alt="sMArtroots smart city dashboard ui design" 
-				src="../img/hdil-smartroots-dashboard-03-1080.webp"
-				srcset="
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="sMArtroots smart city dashboard ui design" src="../img/hdil-smartroots-dashboard-03-1080.webp"
+                    srcset="
 					../img/hdil-smartroots-dashboard-03-800.webp 400w, 
 					../img/hdil-smartroots-dashboard-03-1080.webp 800w, 
 					../img/hdil-smartroots-dashboard-03-1080.webp 1080w, 
 					../img/hdil-smartroots-dashboard-03-1920.webp 1920w"
-				sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw"
-            >   
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+            </div>
+            <div id="project-detail-meta"></div>
         </div>
-        <div id="project-detail-meta"></div>
     </main>
     <footer>
-       
+
     </footer>
     <script src="../main.js"></script>
 </body>
+
 </html>

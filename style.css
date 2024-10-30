@@ -483,6 +483,7 @@ ul {
 /* Hintergrund der Scroll-Leiste */
 ::-webkit-scrollbar-track {
     background: var(--second-color); /* Hintergrundfarbe des Scroll-Tracks */
+    border: var(--border-weight) solid var(--main-color); /* Optionaler Rand für den Scrollbalken */
 }
 
 /* Farbe des Scrollbalkens */

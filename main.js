@@ -7,14 +7,14 @@ function changeLang() {
 function navigateToShow() {
     document.getElementById('show').style.display = "block";
     document.getElementById('projects').style.display = "none";
-    document.getElementById('experience').style.display = "none"; 
+    document.getElementById('experience').style.display = "none";
 
     document.getElementById('navShow').classList.add('active');
     document.getElementById('navProjectsTop').classList.remove('active');
     document.getElementById('navExperienceTop').classList.remove('active');
-    
+
     document.getElementById('navProjectsTop').classList.remove('visible');
-    document.getElementById('navExperienceTop').classList.remove('visible'); 
+    document.getElementById('navExperienceTop').classList.remove('visible');
 
     document.getElementById('navProjectsBottom').classList.remove('notVisible');
     document.getElementById('navExperienceBottom').classList.remove('notVisible');
@@ -51,7 +51,7 @@ function navigateToExperience() {
     document.getElementById('navExperienceTop').classList.add('active');
 
     document.getElementById('navProjectsTop').classList.add('visible');
-    document.getElementById('navExperienceTop').classList.add('visible'); 
+    document.getElementById('navExperienceTop').classList.add('visible');
 
 
     document.getElementById('navProjectsBottom').classList.add('notVisible');
@@ -69,7 +69,7 @@ function navigateToExperience() {
 const projectsEntries = [
     {
         id: 1,
-        projectPage: "projects/portfolio-detail.html?id=1",
+        projectPage: "projects/portfolio-detail.html",
         projectTitle: "Smart Roots – Parking Dashboard",
         projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
@@ -93,7 +93,7 @@ const projectsEntries = [
         projectLink: "https://www.hdilab.org/projects/ar-dxp/",
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
     },
-    {   
+    {
         projectPage: "projects/irrlicht.html",
         projectTitle: "Irrlicht",
         projectCoverimage: "img/sh-irrlicht-coverbild-800.webp",
@@ -113,7 +113,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "User Experience"],
         projectYear: 2023,
         projectContext: "The Rocket Deployer product was developed in cooperation with a company in the summer semester software development project at Mannheim University of Applied Sciences.",
-        projectPeople: ["Sophie Humbert (Design)", "Eddi Bludau (Design)", "Lauritz Fuchs (Computer Science)", "Dominik Koschik (Computer Science)", "Yan Wittmann (Computer Science)", "Julian Komarek (Computer Science)", "Jonas Fügen (Computer Science)"], 
+        projectPeople: ["Sophie Humbert (Design)", "Eddi Bludau (Design)", "Lauritz Fuchs (Computer Science)", "Dominik Koschik (Computer Science)", "Yan Wittmann (Computer Science)", "Julian Komarek (Computer Science)", "Jonas Fügen (Computer Science)"],
         projectLink: "",
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
     },
@@ -231,62 +231,62 @@ const experienceEntries = [
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     if (document.body.id === 'project-details-page') {
-// ID aus der URL abrufen
-const params = new URLSearchParams(window.location.search);
-const entryId = parseInt(params.get('id'));  // Konvertiert in eine Zahl
+        // ID aus der URL abrufen
+        const params = new URLSearchParams(window.location.search);
+        const entryId = parseInt(params.get('id'));  // Konvertiert in eine Zahl
 
-// Den entsprechenden Eintrag finden
-const entry = projectsEntries.find(item => item.id === entryId);
+        // Den entsprechenden Eintrag finden
+        const entry = projectsEntries.find(item => item.id === entryId);
 
-console.log(params);
-console.log(entryId);
-console.log(entry);
+        console.log(params);
+        console.log(entryId);
+        console.log(entry);
 
-// Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
-if (entry) {
-    const detailContainer = document.getElementById('portfolio-detail');
-    
-    let tagsHTML = '<ul class="project-tags">';
-    entry.projectTag.forEach(tag => {
-        tagsHTML += `<li class="tag">${tag}</li>`;
-    });
-    tagsHTML += '</ul>';
+        // Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
+        if (entry) {
+            const detailContainer = document.getElementById('portfolio-detail');
 
-    detailContainer.innerHTML = `
+            let tagsHTML = '<ul class="project-tags">';
+            entry.projectTag.forEach(tag => {
+                tagsHTML += `<li class="tag">${tag}</li>`;
+            });
+            tagsHTML += '</ul>';
+
+            detailContainer.innerHTML = `
         <p>(${entry.projectTitle})</p>
         ${tagsHTML}
         <p class="project-year">(${entry.projectYear})</p>
         <p class="description">${entry.projectDescription}</p>
         
     `;
-} else {
-    // Fallback, falls keine Eintrags-ID gefunden wird
-    detailContainer.innerHTML = `<p>Portfolio-Eintrag nicht gefunden.</p>`;
-}
+        } else {
+            // Fallback, falls keine Eintrags-ID gefunden wird
+            detailContainer.innerHTML = `<p>Portfolio-Eintrag nicht gefunden.</p>`;
+        }
 
-} else if (document.body.id === 'index-page') {
-    // Funktion nur für die Startseite
-    const projectsContainer = document.querySelector('.projects-container');
+    } else if (document.body.id === 'index-page') {
+        // Funktion nur für die Startseite
+        const projectsContainer = document.querySelector('.projects-container');
 
-    projectsEntries.forEach(entry => {
-        // Ein neues Div für jeden Eintrag erstellen
-        const entryDiv = document.createElement('div');
-        entryDiv.classList.add('projects-element');
-    
-    
-        let tagsHTML = '<ul class="project-tags">';
-        entry.projectTag.forEach(tag => {
-            tagsHTML += `<li class="tag">${tag}</li>`;
-        });
-        tagsHTML += '</ul>';
-    
-    
-    
-        // HTML-Inhalt für den Eintrag erstellen
-        entryDiv.innerHTML = `
-                <a href="${entry.projectPage}">
+        projectsEntries.forEach(entry => {
+            // Ein neues Div für jeden Eintrag erstellen
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('projects-element');
+
+
+            let tagsHTML = '<ul class="project-tags">';
+            entry.projectTag.forEach(tag => {
+                tagsHTML += `<li class="tag">${tag}</li>`;
+            });
+            tagsHTML += '</ul>';
+
+
+
+            // HTML-Inhalt für den Eintrag erstellen
+            entryDiv.innerHTML = `
+                <a href="${entry.projectPage}?id=${entry.id}">
                     <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
                     ${tagsHTML}
                     <p class="project-year">(${entry.projectYear})</p>
@@ -294,38 +294,38 @@ if (entry) {
                 </a>
            
         `;
-    
-        // Den Eintrag in das Portfolio-Div einfügen
-        projectsContainer.appendChild(entryDiv);
-    });
-    
-    
-    
-    
-    
-    const experienceContainer = document.querySelector('.experience-container');
-    
-    experienceEntries.forEach(entry => {
-        // Ein neues Div für jeden Eintrag erstellen
-        const entryDiv = document.createElement('div');
-        entryDiv.classList.add('experience-element');
-    
-    
-    
-        // HTML-Inhalt für den Eintrag erstellen
-        entryDiv.innerHTML = `
+
+            // Den Eintrag in das Portfolio-Div einfügen
+            projectsContainer.appendChild(entryDiv);
+        });
+
+
+
+
+
+        const experienceContainer = document.querySelector('.experience-container');
+
+        experienceEntries.forEach(entry => {
+            // Ein neues Div für jeden Eintrag erstellen
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('experience-element');
+
+
+
+            // HTML-Inhalt für den Eintrag erstellen
+            entryDiv.innerHTML = `
             <div class="experience-tags">  
                 <div class="tag">${entry.experienceTag}</div>
                 <p class="experience-year">${entry.experienceYear}</p>
             </div>
             <p class="description">${entry.experienceDescription}</p>
         `;
-    
-        // Den Eintrag in das Portfolio-Div einfügen
-        experienceContainer.appendChild(entryDiv);
-    });
-    
-    
-}
+
+            // Den Eintrag in das Portfolio-Div einfügen
+            experienceContainer.appendChild(entryDiv);
+        });
+
+
+    }
 
 });

@@ -292,12 +292,16 @@ ul {
 
 .project-year {
     padding-inline: 0.4rem;
+    font-size: var(--font-size-medium);
+}
+
+.project-title {
+    font-size: var(--font-size-medium);
 }
 
 .description {
     padding-inline: 0.4rem;
     font-size: var(--font-size-medium);
-
 }
 
 
@@ -305,7 +309,15 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+  
+}
 
+.project-detail-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 0.4rem;
+    align-items: center;
 }
 
 .project-detail-meta {
@@ -313,6 +325,11 @@ ul {
     flex-direction: column;
     gap: 0.6rem;
 
+}
+
+.details-border {
+    border: var(--border-weight) solid var(--main-color);
+    padding-block: 0.6rem 0.4rem;
 }
 
 .experience-container {

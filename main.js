@@ -94,6 +94,7 @@ const projectsEntries = [
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
     },
     {
+        id: 3,
         projectPage: "projects/irrlicht.html",
         projectTitle: "Irrlicht",
         projectCoverimage: "img/sh-irrlicht-coverbild-800.webp",
@@ -106,6 +107,7 @@ const projectsEntries = [
         projectDescription: "Irrlicht - A data-supported, interactive and immersive installation to raise awareness of the issue of light pollution."
     },
     {
+        id: 4,
         projectPage: "projects/rocketdeployer.html",
         projectTitle: "Rocket Deployer",
         projectCoverimage: "img/sh-rocketdeployer-coverbild-800.webp",
@@ -118,6 +120,7 @@ const projectsEntries = [
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
     },
     {
+        id: 5,
         projectPage: "projects/planta.html",
         projectTitle: "planta",
         projectCoverimage: "img/sh-planta-coverbild-800.webp",
@@ -130,6 +133,7 @@ const projectsEntries = [
         projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
     },
     {
+        id: 6,
         projectPage: "projects/marbalance.html",
         projectTitle: "Marbalance",
         projectCoverimage: "img/sh-marbalance-coverbild-800.webp",
@@ -142,6 +146,7 @@ const projectsEntries = [
         projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
     },
     {
+        id: 7,
         projectPage: "projects/tetrisroom.html",
         projectTitle: "Tetris Room",
         projectCoverimage: "img/sh-tetrisroom-coverbild-800.webp",
@@ -154,6 +159,7 @@ const projectsEntries = [
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
     },
     {
+        id: 8,
         projectPage: "projects/deepblue.html",
         projectTitle: "Deep blue",
         projectCoverimage: "img/sh-deep-blue-mushroom-coverbild-800.webp",
@@ -166,6 +172,7 @@ const projectsEntries = [
         projectDescription: "“deep blue” is an animation created with the 3D software Blender."
     },
     {
+        id: 9,
         projectPage: "projects/overheardcatastrophe.html",
         projectTitle: "Overheard catastrophe",
         projectCoverimage: "img/sh-unterwasserlaerm-coverbild-800.webp",
@@ -255,12 +262,15 @@ document.addEventListener('DOMContentLoaded', function () {
             tagsHTML += '</ul>';
 
             detailContainer.innerHTML = `
-                <h4>${entry.projectTitle}</h4>
+                <div class="project-detail-header"> 
+                    <p class="project-title">${entry.projectTitle}</p>
+                    <img src="../icon/cross.svg" alt="close icon">
+                </div>
                 <div class="project-detail-meta">
-                    ${tagsHTML}
-                    <p class="project-year">${entry.projectYear}</p>
-                    <p class="description">${entry.projectContext}</p>
-                    <p class="description">${entry.projectPeople}</p>
+                    <div class="details-border">${tagsHTML}</div>
+                    <p class="project-year details-border">${entry.projectYear}</p>
+                    <p class="description details-border">${entry.projectContext}</p>
+                    <p class="description details-border">${entry.projectPeople}</p>
     
                 </div>
                     

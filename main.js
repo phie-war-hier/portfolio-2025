@@ -68,7 +68,8 @@ function navigateToExperience() {
 
 const projectsEntries = [
     {
-        projectPage: "projects/smartroots.html",
+        id: 1,
+        projectPage: "projects/portfolio-detail.html?id=1",
         projectTitle: "Smart Roots – Parking Dashboard",
         projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
@@ -80,6 +81,7 @@ const projectsEntries = [
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
     },
     {
+        id: 2,
         projectPage: "projects/ardxp.html",
         projectTitle: "AR Data Experience Point",
         projectCoverimage: "img/hdil-ar-data-experience-point-coverbild-800.webp",
@@ -178,6 +180,12 @@ const projectsEntries = [
 ];
 
 
+let tagsHTML = '<ul class="project-tags">';
+    entry.projectTag.forEach(tag => {
+        tagsHTML += `<li class="tag">${tag}</li>`;
+    });
+    tagsHTML += '</ul>';
+    
 const projectsContainer = document.querySelector('.projects-container');
 
 projectsEntries.forEach(entry => {
@@ -186,11 +194,7 @@ projectsEntries.forEach(entry => {
     entryDiv.classList.add('projects-element');
 
 
-    let tagsHTML = '<ul class="project-tags">';
-    entry.projectTag.forEach(tag => {
-        tagsHTML += `<li class="tag">${tag}</li>`;
-    });
-    tagsHTML += '</ul>';
+    
 
 
 
@@ -213,7 +217,6 @@ projectsEntries.forEach(entry => {
 
 
 
-
 const experienceEntries = [
     {
         experienceTag: "Graduation",
@@ -224,7 +227,7 @@ const experienceEntries = [
     {
         experienceTag: "Publication",
         experienceYear: 2024,
-        experienceLink: "",
+        experienceLink: "https://diglib.eg.org/items/fc058e21-331d-45bf-b00b-35c58487e1af",
         experienceDescription: "Embedded temporal data visualizations in an urban environment for casual exploration"
     },
     {
@@ -280,4 +283,38 @@ experienceEntries.forEach(entry => {
 
     // Den Eintrag in das Portfolio-Div einfügen
     experienceContainer.appendChild(entryDiv);
+});
+
+
+
+
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+// ID aus der URL abrufen
+const params = new URLSearchParams(window.location.search);
+const entryId = parseInt(params.get('id'));  // Konvertiert in eine Zahl
+
+// Den entsprechenden Eintrag finden
+const entry = projectsEntries.find(item => item.id === entryId);
+
+console.log(params);
+console.log(entryId);
+console.log(entry);
+
+// Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
+if (entry) {
+    const detailContainer = document.getElementById('portfolio-detail');
+    detailContainer.innerHTML = `
+        <p>(${entry.projectTitle})</p>
+        ${tagsHTML}
+        <p class="project-year">(${entry.projectYear})</p>
+        <p class="description">${entry.projectDescription}</p>
+        
+    `;
+} else {
+    // Fallback, falls keine Eintrags-ID gefunden wird
+    detailContainer.innerHTML = `<p>Portfolio-Eintrag nicht gefunden.</p>`;
+}
+
 });

@@ -105,7 +105,7 @@ const projectsEntries = [
         projectYear: 2024,
         projectContext: " Irrlicht was created in 2024 as a bachelor's thesis supervised by Prof. Hartmut Wöhlbier and Prof. Dr. Till Nagel at the Faculty of Design Mannheim.",
         projectPeople: ["Sophie Humbert"],
-        projectLink: 0,
+        projectLink: "",
         projectLinkText: "",
         projectDescription: "Irrlicht - A data-supported, interactive and immersive installation to raise awareness of the issue of light pollution."
     },
@@ -120,6 +120,7 @@ const projectsEntries = [
         projectContext: "The Rocket Deployer product was developed in cooperation with a company in the summer semester software development project at Mannheim University of Applied Sciences.",
         projectPeople: ["Sophie Humbert (Design)", "Eddi Bludau (Design)", "Lauritz Fuchs (Computer Science)", "Dominik Koschik (Computer Science)", "Yan Wittmann (Computer Science)", "Julian Komarek (Computer Science)", "Jonas Fügen (Computer Science)"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
     },
     {
@@ -133,6 +134,7 @@ const projectsEntries = [
         projectContext: "planta was designed as a group project in the Interactive Media course at the Faculty of Design Mannheim.",
         projectPeople: ["Paco Gutiérrez Hardt", "Teresa Hoffmann", "Sophie Humbert"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
     },
     {
@@ -146,6 +148,7 @@ const projectsEntries = [
         projectContext: "The game was developed as a group project in the “Games Night” course at the Faculty of Design in Mannheim.",
         projectPeople: ["Paco Gutiérrez Hardt (Design)", "Teresa Hoffmann (Design)", "Sophie Humbert (Design)", "Christian Fagherazzi (Computer science)"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
     },
     {
@@ -159,6 +162,7 @@ const projectsEntries = [
         projectContext: "The Tetris Room was realized as part of a student research project and is part of a virtual exhibition at the Faculty of Design Mannheim.",
         projectPeople: ["Teresa Hoffmann", "Sophie Humbert"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
     },
     {
@@ -172,6 +176,7 @@ const projectsEntries = [
         projectContext: "The animation was created in the course Visualization with 3D at the Faculty of Design Mannheim.",
         projectPeople: ["Sophie Humbert"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "“deep blue” is an animation created with the 3D software Blender."
     },
     {
@@ -185,6 +190,7 @@ const projectsEntries = [
         projectContext: "The work was created in the winter semester 22/23 in the course Communication in Space at the Faculty of Design Mannheim.",
         projectPeople: ["Sophie Humbert"],
         projectLink: "",
+        projectLinkText: "",
         projectDescription: "A concept for an installation to raise awareness of the issue of underwater noise."
     }
 ];
@@ -195,42 +201,49 @@ const experienceEntries = [
         experienceTag: "Graduation",
         experienceYear: 2024,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Bachelor of Arts Communication Design at the Faculty of Design Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Publication",
         experienceYear: 2024,
         experienceLink: "https://diglib.eg.org/items/fc058e21-331d-45bf-b00b-35c58487e1af",
+        experienceLinkText: "",
         experienceDescription: "Embedded temporal data visualizations in an urban environment for casual exploration"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2024,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Internship",
         experienceYear: 2024,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Internship as UX Designer at sovanta AG in Heidelberg"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2023,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Event",
         experienceYear: 2022,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Captcha Design Festival at the Faculty of Design Mannheim"
     },
     {
         experienceTag: "Job position",
         experienceYear: 2022,
         experienceLink: "",
+        experienceLinkText: "",
         experienceDescription: "Working student in sales at Markthaus Mannheim gGmbH"
     }
 ];

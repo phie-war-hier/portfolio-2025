@@ -180,43 +180,6 @@ const projectsEntries = [
 ];
 
 
-let tagsHTML = '<ul class="project-tags">';
-    entry.projectTag.forEach(tag => {
-        tagsHTML += `<li class="tag">${tag}</li>`;
-    });
-    tagsHTML += '</ul>';
-    
-const projectsContainer = document.querySelector('.projects-container');
-
-projectsEntries.forEach(entry => {
-    // Ein neues Div für jeden Eintrag erstellen
-    const entryDiv = document.createElement('div');
-    entryDiv.classList.add('projects-element');
-
-
-    
-
-
-
-    // HTML-Inhalt für den Eintrag erstellen
-    entryDiv.innerHTML = `
-            <a href="${entry.projectPage}">
-                <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
-                ${tagsHTML}
-                <p class="project-year">(${entry.projectYear})</p>
-                <p class="description">${entry.projectDescription}</p>
-            </a>
-       
-    `;
-
-    // Den Eintrag in das Portfolio-Div einfügen
-    projectsContainer.appendChild(entryDiv);
-});
-
-
-
-
-
 const experienceEntries = [
     {
         experienceTag: "Graduation",
@@ -263,34 +226,13 @@ const experienceEntries = [
 ];
 
 
-const experienceContainer = document.querySelector('.experience-container');
-
-experienceEntries.forEach(entry => {
-    // Ein neues Div für jeden Eintrag erstellen
-    const entryDiv = document.createElement('div');
-    entryDiv.classList.add('experience-element');
-
-
-
-    // HTML-Inhalt für den Eintrag erstellen
-    entryDiv.innerHTML = `
-        <div class="experience-tags">  
-            <div class="tag">${entry.experienceTag}</div>
-            <p class="experience-year">${entry.experienceYear}</p>
-        </div>
-        <p class="description">${entry.experienceDescription}</p>
-    `;
-
-    // Den Eintrag in das Portfolio-Div einfügen
-    experienceContainer.appendChild(entryDiv);
-});
 
 
 
 
 
-
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.body.id === 'project-details-page') {
 // ID aus der URL abrufen
 const params = new URLSearchParams(window.location.search);
 const entryId = parseInt(params.get('id'));  // Konvertiert in eine Zahl
@@ -305,6 +247,13 @@ console.log(entry);
 // Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
 if (entry) {
     const detailContainer = document.getElementById('portfolio-detail');
+    
+    let tagsHTML = '<ul class="project-tags">';
+    entry.projectTag.forEach(tag => {
+        tagsHTML += `<li class="tag">${tag}</li>`;
+    });
+    tagsHTML += '</ul>';
+
     detailContainer.innerHTML = `
         <p>(${entry.projectTitle})</p>
         ${tagsHTML}
@@ -315,6 +264,68 @@ if (entry) {
 } else {
     // Fallback, falls keine Eintrags-ID gefunden wird
     detailContainer.innerHTML = `<p>Portfolio-Eintrag nicht gefunden.</p>`;
+}
+
+} else if (document.body.id === 'index-page') {
+    // Funktion nur für die Startseite
+    const projectsContainer = document.querySelector('.projects-container');
+
+    projectsEntries.forEach(entry => {
+        // Ein neues Div für jeden Eintrag erstellen
+        const entryDiv = document.createElement('div');
+        entryDiv.classList.add('projects-element');
+    
+    
+        let tagsHTML = '<ul class="project-tags">';
+        entry.projectTag.forEach(tag => {
+            tagsHTML += `<li class="tag">${tag}</li>`;
+        });
+        tagsHTML += '</ul>';
+    
+    
+    
+        // HTML-Inhalt für den Eintrag erstellen
+        entryDiv.innerHTML = `
+                <a href="${entry.projectPage}">
+                    <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
+                    ${tagsHTML}
+                    <p class="project-year">(${entry.projectYear})</p>
+                    <p class="description">${entry.projectDescription}</p>
+                </a>
+           
+        `;
+    
+        // Den Eintrag in das Portfolio-Div einfügen
+        projectsContainer.appendChild(entryDiv);
+    });
+    
+    
+    
+    
+    
+    const experienceContainer = document.querySelector('.experience-container');
+    
+    experienceEntries.forEach(entry => {
+        // Ein neues Div für jeden Eintrag erstellen
+        const entryDiv = document.createElement('div');
+        entryDiv.classList.add('experience-element');
+    
+    
+    
+        // HTML-Inhalt für den Eintrag erstellen
+        entryDiv.innerHTML = `
+            <div class="experience-tags">  
+                <div class="tag">${entry.experienceTag}</div>
+                <p class="experience-year">${entry.experienceYear}</p>
+            </div>
+            <p class="description">${entry.experienceDescription}</p>
+        `;
+    
+        // Den Eintrag in das Portfolio-Div einfügen
+        experienceContainer.appendChild(entryDiv);
+    });
+    
+    
 }
 
 });

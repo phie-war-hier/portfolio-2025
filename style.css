@@ -283,7 +283,10 @@ ul {
     justify-content: flex-start;
     padding-inline: 0.4rem;
     gap: 0.2rem;
-    
+}
+
+#project-detail-meta .project-tags {
+    padding-inline: 0;  
 }
 
 .project-year {
@@ -326,6 +329,9 @@ ul {
 .details-border {
     border: var(--border-weight) solid var(--main-color);
     padding-block: 0.6rem 0.4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .project-detail-container {
@@ -346,7 +352,7 @@ ul {
 
     @media (min-width: 900px) {
         width: 20%;
-        flex-grow: 5;
+        flex-grow: 6;
         overflow-y: auto; 
         height: 82vh;
         
@@ -460,8 +466,7 @@ ul {
 
 /* Hintergrund der Scroll-Leiste */
 .gallery::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Hintergrundfarbe des Scroll-Tracks */
-    border-radius: 10px; /* Abrundung der Kanten */
+    background: var(--second-color); /* Hintergrundfarbe des Scroll-Tracks */
 }
 
 /* Farbe des Scrollbalkens */

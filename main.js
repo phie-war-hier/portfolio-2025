@@ -272,11 +272,11 @@ document.addEventListener('DOMContentLoaded', function () {
             tagsHTML += '</ul>';
 
             detailContainer.innerHTML = `
-                    <div class="details-border">${tagsHTML}</div>
-                    <p class="project-year details-border">${entry.projectYear}</p>
-                    <p class="description details-border">${entry.projectContext}</p>
-                    <p class="description details-border">${entry.projectPeople}</p>
-                    <a class="description details-border" target="_blank" href="${entry.projectLink}">sMArt roots page at HDIL</a>              
+                    <div class="description details-border"><p>Tags</p>${tagsHTML}</div>
+                    <div class="project-year details-border"><p>Year</p> <p>${entry.projectYear}</p></div>
+                    <div class="description details-border"><p>Context</p> <p>${entry.projectContext}</p></div>
+                    <div class="description details-border"><p>People</p> <p>${entry.projectPeople}</p></div>
+                    <div class="description details-border"><p>Link</p> <a target="_blank" href="${entry.projectLink}">sMArt roots page at HDIL</a></div>             
             `;
         } else {
             // Fallback, falls keine Eintrags-ID gefunden wird

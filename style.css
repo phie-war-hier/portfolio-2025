@@ -303,6 +303,15 @@ ul {
     font-size: var(--font-size-medium);
 }
 
+.gallery .description {
+    padding-inline: 0;
+    
+    @media (min-width: 1200px) {
+        width: 76%; 
+    }
+    
+}
+
 #project-detail-header {
     width: 100%;
     display: flex;
@@ -349,6 +358,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-block-end: 2rem;
 
     @media (min-width: 900px) {
         width: 20%;

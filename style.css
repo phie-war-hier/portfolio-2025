@@ -320,11 +320,6 @@ ul {
     @media (min-width: 900px) {
         flex-grow: 1;
         width: 20%;
-        position: sticky;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        background-color: var(--background-color);
     }
 }
 
@@ -338,11 +333,9 @@ ul {
     display: flex;
     flex-direction: column;
     gap: inherit;
-    
 
     @media (min-width: 900px) {
         flex-direction: row;
-       
     }
 }
 
@@ -352,19 +345,28 @@ ul {
     gap: 1rem;
 
     @media (min-width: 900px) {
-    width: 20%;
-    flex-grow: 5;
+        width: 20%;
+        flex-grow: 5;
+        overflow-y: auto; 
+        height: 82vh;
+        
     }
 
     @media (min-width: 1200px) {
         width: 20%;
-        flex-grow: 8;
+        flex-grow: 10;
+        overflow-y: auto; 
+        height: 82vh;      
     }
  
 }
 
 
-
+#project-details-page {
+    @media (min-width: 900px) {
+        overflow: hidden;        
+    }
+}
 
 
 .experience-container {
@@ -445,3 +447,31 @@ ul {
 }
 
 
+
+
+
+/* Scrollbar */
+
+/* Breite der Scroll-Leiste */
+.gallery::-webkit-scrollbar {
+    width: 12px; /* Breite der vertikalen Scroll-Leiste */
+    height: 12px; /* Höhe der horizontalen Scroll-Leiste */
+}
+
+/* Hintergrund der Scroll-Leiste */
+.gallery::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Hintergrundfarbe des Scroll-Tracks */
+    border-radius: 10px; /* Abrundung der Kanten */
+}
+
+/* Farbe des Scrollbalkens */
+.gallery::-webkit-scrollbar-thumb {
+    background-color: var(--background-color); /* Farbe des Scrollbalkens */
+    border: var(--border-weight) solid var(--main-color); /* Optionaler Rand für den Scrollbalken */
+}
+
+/* Hover-Effekt für den Scrollbalken */
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color); /* Farbe beim Hover über den Scrollbalken */
+    cursor: grab;
+}

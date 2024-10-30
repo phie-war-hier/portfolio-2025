@@ -69,14 +69,14 @@ function navigateToExperience() {
 const projectsEntries = [
     {
         id: 1,
-        projectPage: "projects/portfolio-detail.html",
+        projectPage: "projects/smartroots.html",
         projectTitle: "Smart Roots – Parking Dashboard",
         projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["User Experience", "Interaction"],
         projectYear: 2023,
         projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the HDIL.",
-        projectPeople: ["Till Nagel", "Christoph Huber", "Sophie Humbert"],
+        projectPeople: [" Till Nagel", " Christoph Huber", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/smart-roots/",
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
     },
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
         if (entry) {
-            const detailContainer = document.getElementById('portfolio-detail');
+            const detailContainer = document.getElementById('project-detail');
 
             let tagsHTML = '<ul class="project-tags">';
             entry.projectTag.forEach(tag => {
@@ -255,10 +255,15 @@ document.addEventListener('DOMContentLoaded', function () {
             tagsHTML += '</ul>';
 
             detailContainer.innerHTML = `
-        <p>(${entry.projectTitle})</p>
-        ${tagsHTML}
-        <p class="project-year">(${entry.projectYear})</p>
-        <p class="description">${entry.projectDescription}</p>
+                <h4>${entry.projectTitle}</h4>
+                <div class="project-detail-meta">
+                    ${tagsHTML}
+                    <p class="project-year">${entry.projectYear}</p>
+                    <p class="description">${entry.projectContext}</p>
+                    <p class="description">${entry.projectPeople}</p>
+    
+                </div>
+                    
         
     `;
         } else {
@@ -289,7 +294,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="${entry.projectPage}?id=${entry.id}">
                     <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
                     ${tagsHTML}
-                    <p class="project-year">(${entry.projectYear})</p>
                     <p class="description">${entry.projectDescription}</p>
                 </a>
            

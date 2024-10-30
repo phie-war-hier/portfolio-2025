@@ -32,6 +32,7 @@ body {
     font: var(--font-size-large) "Epilogue-Regular", sans-serif;
     line-height: 1.2;   
     background-color: var(--background-color);
+    color: var(--main-color);
   
 }
 
@@ -45,6 +46,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    
 }
 
 footer {
@@ -289,12 +291,27 @@ ul {
 }
 
 .project-year {
-    display: none;
+    padding-inline: 0.4rem;
 }
 
 .description {
     padding-inline: 0.4rem;
     font-size: var(--font-size-medium);
+
+}
+
+
+.project-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+
+.project-detail-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 
 }
 

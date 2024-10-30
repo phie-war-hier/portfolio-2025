@@ -246,10 +246,6 @@ ul {
         flex-direction: column;
         gap: 0.6rem;
     }
-
-    
-
-
 }
 
 .projects-element:hover, .projects-element:active {
@@ -304,15 +300,7 @@ ul {
     font-size: var(--font-size-medium);
 }
 
-
-.project-detail-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-  
-}
-
-.project-detail-header {
+#project-detail-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -320,16 +308,25 @@ ul {
     align-items: center;
 }
 
-.project-detail-meta {
+
+#project-detail-meta {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-
 }
+
+
 
 .details-border {
     border: var(--border-weight) solid var(--main-color);
     padding-block: 0.6rem 0.4rem;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .experience-container {

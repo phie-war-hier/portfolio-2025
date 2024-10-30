@@ -70,12 +70,12 @@ const projectsEntries = [
     {
         id: 1,
         projectPage: "projects/smartroots.html",
-        projectTitle: "Smart Roots – Parking Dashboard",
+        projectTitle: "sMArt roots – Parking Dashboard",
         projectCoverimage: "img/hdil-smartroots-coverbild-800.webp",
         alt: "User Experience",
         projectTag: ["User Experience", "Interaction"],
         projectYear: 2023,
-        projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the HDIL.",
+        projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the Human Data Interaction Lab (HDIL).",
         projectPeople: [" Till Nagel", " Christoph Huber", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/smart-roots/",
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
@@ -253,7 +253,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
         if (entry) {
-            const detailContainer = document.getElementById('project-detail');
+            const detailTitle = document.getElementById('project-detail-header')
+            
+            detailTitle.innerHTML = `
+                    <p class="project-title">${entry.projectTitle}</p>
+                    <img src="../icon/cross.svg" alt="close icon">
+            `;
+        }
+
+        if (entry) {
+            const detailContainer = document.getElementById('project-detail-meta');
 
             let tagsHTML = '<ul class="project-tags">';
             entry.projectTag.forEach(tag => {
@@ -262,20 +271,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tagsHTML += '</ul>';
 
             detailContainer.innerHTML = `
-                <div class="project-detail-header"> 
-                    <p class="project-title">${entry.projectTitle}</p>
-                    <img src="../icon/cross.svg" alt="close icon">
-                </div>
-                <div class="project-detail-meta">
                     <div class="details-border">${tagsHTML}</div>
                     <p class="project-year details-border">${entry.projectYear}</p>
                     <p class="description details-border">${entry.projectContext}</p>
                     <p class="description details-border">${entry.projectPeople}</p>
-    
-                </div>
-                    
-        
-    `;
+                    <a class="description details-border" target="_blank" href="${entry.projectLink}">sMArt roots page at HDIL</a>              
+            `;
         } else {
             // Fallback, falls keine Eintrags-ID gefunden wird
             detailContainer.innerHTML = `<p>Portfolio-Eintrag nicht gefunden.</p>`;

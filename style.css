@@ -108,6 +108,8 @@ footer {
 
 .socials {
     padding-block-start: 0.4rem;
+    display: flex;
+    gap: 0.6rem;
 
 }
 

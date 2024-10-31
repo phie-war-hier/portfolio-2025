@@ -252,6 +252,71 @@ const experienceEntries = [
 projectsEntries.sort((a, b) => b.projectYear - a.projectYear);
 experienceEntries.sort((a, b) => b.experienceYear - a.experienceYear);
 
+// Funktion zum Anzeigen aller Einträge
+function showAllEntries() {
+    const projectsContainer = document.querySelector('.projects-container');
+    projectsContainer.innerHTML = ""; // Container leeren
+
+    projectsEntries.forEach(entry => {
+        // Ein neues Div für jeden Eintrag erstellen
+        const entryDiv = document.createElement('div');
+        entryDiv.classList.add('projects-element');
+
+        // Tags 
+        let tagsHTML = '<ul class="project-tags">';
+        entry.projectTag.forEach(tag => {
+            tagsHTML += `<li class="tag">${tag}</li>`;
+        });
+        tagsHTML += '</ul>';
+
+        // HTML-Inhalt für den Eintrag erstellen
+        entryDiv.innerHTML = `
+        <a href="${entry.projectPage}?id=${entry.id}">
+            <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
+            ${tagsHTML}
+            <p class="description">${entry.projectDescription}</p>
+        </a>
+   
+`;
+
+        // Den Eintrag in das Portfolio-Div einfügen
+        projectsContainer.appendChild(entryDiv);
+    });
+}
+
+// Funktion zum Filtern und Anzeigen der gefilterten Einträge
+function showFilteredEntries(tag) {
+    const filteredEntries = projectsEntries.filter(entry => entry.projectTag.includes(tag));
+    projectsContainer = document.querySelector(".projects-container");
+
+    projectsContainer.innerHTML = ""; // Container leeren
+
+    filteredEntries.forEach(entry => {
+        entryDiv = document.createElement("div");
+        entryDiv.classList.add('projects-element');
+
+        // Tags 
+        let tagsHTML = '<ul class="project-tags">';
+        entry.projectTag.forEach(tag => {
+            tagsHTML += `<li class="tag">${tag}</li>`;
+        });
+        tagsHTML += '</ul>';
+
+        // HTML-Inhalt für den Eintrag erstellen
+        entryDiv.innerHTML = `
+        <a href="${entry.projectPage}?id=${entry.id}">
+            <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
+            ${tagsHTML}
+            <p class="description">${entry.projectDescription}</p>
+        </a>
+   
+`;
+
+
+        projectsContainer.appendChild(entryDiv);
+    });
+}
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -270,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Wenn Eintrag existiert, Inhalt in den HTML-Code einfügen
         if (entry) {
             const detailTitle = document.getElementById('project-detail-header')
-            
+
             detailTitle.innerHTML = `
                     <img src="../icon/arrow-back.svg" alt="close icon">
                     <p class="project-title">${entry.projectTitle}</p>
@@ -303,38 +368,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     } else if (document.body.id === 'index-page') {
         // Funktion nur für die Startseite
-        const projectsContainer = document.querySelector('.projects-container');
-
-        projectsEntries.forEach(entry => {
-            // Ein neues Div für jeden Eintrag erstellen
-            const entryDiv = document.createElement('div');
-            entryDiv.classList.add('projects-element');
-
-
-            let tagsHTML = '<ul class="project-tags">';
-            entry.projectTag.forEach(tag => {
-                tagsHTML += `<li class="tag">${tag}</li>`;
-            });
-            tagsHTML += '</ul>';
-
-
-
-            // HTML-Inhalt für den Eintrag erstellen
-            entryDiv.innerHTML = `
-                <a href="${entry.projectPage}?id=${entry.id}">
-                    <img class="project-coverimage" src="${entry.projectCoverimage}" alt="${entry.alt}">
-                    ${tagsHTML}
-                    <p class="description">${entry.projectDescription}</p>
-                </a>
-           
-        `;
-
-            // Den Eintrag in das Portfolio-Div einfügen
-            projectsContainer.appendChild(entryDiv);
-        });
-
-
-
+        showAllEntries();
 
 
         const experienceContainer = document.querySelector('.experience-container');

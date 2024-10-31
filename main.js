@@ -90,7 +90,7 @@ const projectsEntries = [
         projectTag: ["Data Vis", "Interaction"],
         projectYear: 2024,
         projectContext: "The AR Data Experience Point is a research project of the Human Data Interaction Lab at Mannheim University of Applied Sciences.",
-        projectPeople: ["Till Nagel", "Christoph Huber", "Ekkehard Petzold", "Sophie Humbert"],
+        projectPeople: ["Till Nagel", " Christoph Huber", " Ekkehard Petzold", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/ar-dxp/",
         projectLinkText: "Project AR DXP at the HDIL",
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
@@ -118,7 +118,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "User Experience"],
         projectYear: 2023,
         projectContext: "The Rocket Deployer product was developed in cooperation with a company in the summer semester software development project at Mannheim University of Applied Sciences.",
-        projectPeople: ["Sophie Humbert (Design)", "Eddi Bludau (Design)", "Lauritz Fuchs (Computer Science)", "Dominik Koschik (Computer Science)", "Yan Wittmann (Computer Science)", "Julian Komarek (Computer Science)", "Jonas Fügen (Computer Science)"],
+        projectPeople: ["Sophie Humbert (Design)", " Eddi Bludau (Design)", " Lauritz Fuchs (Computer Science)", " Dominik Koschik (Computer Science)", " Yan Wittmann (Computer Science)", " Julian Komarek (Computer Science)", " Jonas Fügen (Computer Science)"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
@@ -132,7 +132,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "Installation"],
         projectYear: 2022,
         projectContext: "planta was designed as a group project in the Interactive Media course at the Faculty of Design Mannheim.",
-        projectPeople: ["Paco Gutiérrez Hardt", "Teresa Hoffmann", "Sophie Humbert"],
+        projectPeople: ["Paco Gutiérrez Hardt", " Teresa Hoffmann", " Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
@@ -146,7 +146,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "Game"],
         projectYear: 2023,
         projectContext: "The game was developed as a group project in the “Games Night” course at the Faculty of Design in Mannheim.",
-        projectPeople: ["Paco Gutiérrez Hardt (Design)", "Teresa Hoffmann (Design)", "Sophie Humbert (Design)", "Christian Fagherazzi (Computer science)"],
+        projectPeople: ["Paco Gutiérrez Hardt (Design)", " Teresa Hoffmann (Design)", " Sophie Humbert (Design)", " Christian Fagherazzi (Computer science)"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
@@ -159,8 +159,8 @@ const projectsEntries = [
         alt: "User Experience",
         projectTag: ["3D", "Game"],
         projectYear: 2024,
-        projectContext: "The Tetris Room was realized as part of a student research project and is part of a virtual exhibition at the Faculty of Design Mannheim.",
-        projectPeople: ["Teresa Hoffmann", "Sophie Humbert"],
+        projectContext: "The Tetris Room was realized as a student research project and is part of the Virtual Lab project at the Faculty of Design Mannheim.",
+        projectPeople: ["Sophie Humbert", " Teresa Hoffmann"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Humbert</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="project-details-page">
+    <header>
+        <nav class="nav-container">
+            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
+                <h4>Sophie Humbert</h4>
+                <div class="wrapper-right">
+                    <div class="socials">
+                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="../icon/behance.svg"></a>
+                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                    </div>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
+                </div>
+            </div>
+            <div id="navProjectsTop" class="nav-element top active visible">
+                <a href="../index.html">
+                    <div id="project-detail-header"> </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="project-detail-container">
+            <div class="gallery">
+                <div>
+                    <video autoplay="true" loop muted
+                        alt="3d motion design blender, music i use: bensound.com license code: WZH8KAOJNJGAJEQJ"
+                        poster="../img/sh-deep-blue-coverbild-1080.webp" width="100%">
+                        <source src="../img/sh-deep-blue-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <img alt="3d motion design blender butterfly rendering" src="../img/sh-deep-blue-butterfly-800.webp"
+                    srcset="
+					../img/sh-deep-blue-butterfly-400.webp 400w, 
+					../img/sh-deep-blue-butterfly-800.webp 800w, 
+					../img/sh-deep-blue-butterfly-1080.webp 1080w, 
+					../img/sh-deep-blue-butterfly-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="3d motion design blender mushrooms liminal space rendering "
+                    src="../img/sh-deep-blue-mushrooms-800.webp" srcset="
+					../img/sh-deep-blue-mushrooms-400.webp 400w, 
+					../img/sh-deep-blue-mushrooms-800.webp 800w, 
+					../img/sh-deep-blue-mushrooms-1080.webp 1080w, 
+					../img/sh-deep-blue-mushrooms-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <p class="description">“deep blue” is an animation that shows a surreal scene. It was created with the
+                    software blender.</a>
+                </p>
+            </div>
+            <div id="project-detail-meta"></div>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-container">
+            <div id="navProjectsBottom" class="nav-element bottom inactive notVisible" onclick="navigateToProjects()">
+                <h4>Projects</h4>
+            </div>
+            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
+                <h4>Experience</h4>
+            </div>
+        </nav>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

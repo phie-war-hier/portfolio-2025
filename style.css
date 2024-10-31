@@ -368,7 +368,7 @@ ul {
         width: 20%;
         flex-grow: 6;
         overflow-y: auto; 
-        height: 82vh;
+        height: 70vh;
         
     }
 
@@ -376,7 +376,7 @@ ul {
         width: 20%;
         flex-grow: 10;
         overflow-y: auto; 
-        height: 82vh;      
+        height: 78vh;      
     }
  
 }

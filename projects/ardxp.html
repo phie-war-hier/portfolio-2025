@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Humbert</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="project-details-page">
+    <header>
+        <nav class="nav-container">
+            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
+                <h4>Sophie Humbert</h4>
+                <div class="wrapper-right">
+                    <div class="socials">
+                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="../icon/behance.svg"></a>
+                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                    </div>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
+                </div>
+            </div>
+            <div id="navProjectsTop" class="nav-element top active visible">
+                <a href="../index.html">
+                    <div id="project-detail-header"> </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="project-detail-container">
+            <div class="gallery">
+                <div>
+                    <video autoplay="true" loop muted alt="ar data experience point camera and screencast side by side"
+                        poster="../img/hdil-ar-data-experience-point-videocover-1920.webp" width="100%">
+                        <source src="../img/hdil-ar-data-experience-point-cam-and-screencast.mp4" type="video/mp4">
+                    </video>
+                    <p style="font-size: small;">Video by Till Nagel (HDIL)</p>
+                </div>
+                <img alt="ar data experience point design vis types"
+                    src="../img/hdil-ar-data-experience-point-02-3840.webp" srcset="
+					../img/hdil-ar-data-experience-point-02-1920.webp 400w, 
+					../img/hdil-ar-data-experience-point-02-1920.webp 800w, 
+					../img/hdil-ar-data-experience-point-02-3840.webp 1080w, 
+					../img/hdil-ar-data-experience-point-02-3840.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="ar data experience point labels draft" src="../img/hdil-ar-data-experience-point-04-800.webp"
+                    srcset="
+					../img/hdil-ar-data-experience-point-04-800.webp 400w, 
+					../img/hdil-ar-data-experience-point-04-800.webp 800w, 
+					../img/hdil-ar-data-experience-point-04-1080.webp 1080w, 
+					../img/hdil-ar-data-experience-point-04-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="ar data experience point prototype" src="../img/hdil-ar-data-experience-point-01-800.webp"
+                    srcset="
+					../img/hdil-ar-data-experience-point-01-400.webp 400w, 
+					../img/hdil-ar-data-experience-point-01-800.webp 800w, 
+					../img/hdil-ar-data-experience-point-01-1080.webp 1080w, 
+					../img/hdil-ar-data-experience-point-01-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+
+                <p class="description">The <a target=“_blank” href=“https://www.hdilab.org/projects/ar-dxp/”>AR Data
+                        Experience Point at HDIL</a> is a research project on embedded temporal data
+                    visualizations in an urban environment for the exploration of traffic data in everyday life. The
+                    interaction with urban data is realized through Argumented Reality. This allows the data to be
+                    better understood embedded in the reality it represents. As can be seen in the video, a grouped area
+                    diagram visualizing the development of traffic. The time data is positioned along the axis, with
+                    arrows and legends floating slightly
+                    overhead. For the project I developed different visualization languages ranging from continuous
+                    grouped area charts, discrete stacked bar charts, grouped bar charts, violin plots, flat area charts
+                    to layered area charts for multiple time axes. The focus in the design of the visualization was on
+                    how the visualization of the data is connected to the environment.
+
+                </p>
+            </div>
+            <div id="project-detail-meta"></div>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-container">
+            <div id="navProjectsBottom" class="nav-element bottom inactive notVisible" onclick="navigateToProjects()">
+                <h4>Projects</h4>
+            </div>
+            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
+                <h4>Experience</h4>
+            </div>
+        </nav>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Humbert</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="project-details-page">
+    <header>
+        <nav class="nav-container">
+            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
+                <h4>Sophie Humbert</h4>
+                <div class="wrapper-right">
+                    <div class="socials">
+                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="../icon/behance.svg"></a>
+                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                    </div>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
+                </div>
+            </div>
+            <div id="navProjectsTop" class="nav-element top active visible">
+                <a href="../index.html">
+                    <div id="project-detail-header"> </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="project-detail-container">
+            <div class="gallery">
+                <img alt="installation unterwasserlärm strand sicht von oben"
+                    src="../img/sh-unterwasserlaerm-rendering-002-800.webp" srcset="
+					../img/sh-unterwasserlaerm-rendering-002-400.webp 400w, 
+					../img/sh-unterwasserlaerm-rendering-002-800.webp 800w, 
+					../img/sh-unterwasserlaerm-rendering-002-1080.webp 1080w, 
+					../img/sh-unterwasserlaerm-rendering-002-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="installation unterwasserlärm strand sicht von der seite wellenform"
+                    src="../img/sh-unterwasserlaerm-rendering-005-800.webp" srcset="
+					../img/sh-unterwasserlaerm-rendering-005-400.webp 400w, 
+					../img/sh-unterwasserlaerm-rendering-005-800.webp 800w, 
+					../img/sh-unterwasserlaerm-rendering-005-1080.webp 1080w, 
+					../img/sh-unterwasserlaerm-rendering-005-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+
+                <img alt="installation unterwasserlärm strand sicht von der seite mit besucher:in"
+                    src="../img/sh-unterwasserlaerm-rendering-001-800.webp" srcset="
+					../img/sh-unterwasserlaerm-rendering-001-400.webp 400w, 
+					../img/sh-unterwasserlaerm-rendering-001-800.webp 800w, 
+					../img/sh-unterwasserlaerm-rendering-001-1080.webp 1080w, 
+					../img/sh-unterwasserlaerm-rendering-001-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="installation unterwasserlärm strand sicht von oben struktur"
+                    src="../img/sh-unterwasserlaerm-rendering-004-800.webp" srcset="
+					../img/sh-unterwasserlaerm-rendering-004-400.webp 400w, 
+					../img/sh-unterwasserlaerm-rendering-004-800.webp 800w, 
+					../img/sh-unterwasserlaerm-rendering-004-1080.webp 1080w, 
+					../img/sh-unterwasserlaerm-rendering-004-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <p class="description">The overheard catastrophe - the installation consists of several wooden beams set
+                    up vertically. The height of the beams varies as they represent the waveform of a sonar signal. To
+                    make the installation as sustainable as possible, it could be made from driftwood or old beams and
+                    processed to the appropriate sizes. Viewers can walk around the installation and explore the
+                    different heights of the beams while learning about the topic of underwater noise. The beams are
+                    illuminated differently by the movement of the sunlight, emphasizing the diversity of the beams and
+                    the movement of the waves. The installation is intended to raise awareness of the issue of
+                    underwater noise.</p>
+            </div>
+            <div id="project-detail-meta"></div>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-container">
+            <div id="navProjectsBottom" class="nav-element bottom inactive notVisible" onclick="navigateToProjects()">
+                <h4>Projects</h4>
+            </div>
+            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
+                <h4>Experience</h4>
+            </div>
+        </nav>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

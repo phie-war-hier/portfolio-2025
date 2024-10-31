@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Humbert</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="project-details-page">
+    <header>
+        <nav class="nav-container">
+            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
+                <h4>Sophie Humbert</h4>
+                <div class="wrapper-right">
+                    <div class="socials">
+                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
+                                src="../icon/behance.svg"></a>
+                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                    </div>
+                    <!--<button class="btn" onclick="changeLang()">De</button>-->
+                </div>
+            </div>
+            <div id="navProjectsTop" class="nav-element top active visible">
+                <a href="../index.html">
+                    <div id="project-detail-header"> </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="project-detail-container">
+            <div class="gallery">
+                <div>
+                    <video autoplay="true" loop muted poster="../img/sh-marbalance-screen-1080.webp"
+                        width="100%">
+                        <source alt="video das das spiel marbalance in aktion zeigt interaktion game design"
+                            src="../img/sh-marbalance-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <img alt="marbalance game design interaktion balanceboard hardware processing"
+                    src="../img/sh-marbalance-gameplay-800.webp" srcset="
+                    ../img/sh-marbalance-gameplay-400.webp 400w, 
+                    ../img/sh-marbalance-gameplay-800.webp 800w, 
+                    ../img/sh-marbalance-gameplay-1080.webp 1080w, 
+                    ../img/sh-marbalance-gameplay-1920.webp 1920w"
+                    sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+
+                <img alt="marbalance game design interaktion balanceboard hardware processing"
+                    src="../img/sh-marbalance-screen-800.webp" srcset="
+				../img/sh-marbalance-screen-400.webp 400w, 
+				../img/sh-marbalance-screen-800.webp 800w, 
+				../img/sh-marbalance-screen-1080.webp 1080w, 
+				../img/sh-marbalance-screen-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="marbalance game design interaktion balanceboard hardware processing"
+                    src="../img/sh-marbalance-gameover-800.webp" srcset="
+				../img/sh-marbalance-gameover-400.webp 400w, 
+				../img/sh-marbalance-gameover-800.webp 800w, 
+				../img/sh-marbalance-gameover-1080.webp 1080w, 
+				../img/sh-marbalance-gameover-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+                <img alt="marbalance game design interaktion balanceboard hardware processing"
+                    src="../img/sh-marbalance-gamesnight-800.webp" srcset="
+				../img/sh-marbalance-gamesnight-400.webp 400w, 
+				../img/sh-marbalance-gamesnight-800.webp 800w, 
+				../img/sh-marbalance-gamesnight-1080.webp 1080w, 
+				../img/sh-marbalance-gamesnight-1920.webp 1920w" sizes="(min-with: 700px) 65vw, (min-width: 1200px) 40vw, 100vw">
+
+                <p class="description">Marbalance is an interactive game in which the player has to avoid red dots. The
+                    player, a blue dot, is controlled with the help of a balancing board. The board is equipped with a
+                    sensor that records the movement of the board and transmits it to a computer. In the game, you can
+                    choose between four difficulty levels, which influence the number and speed of
+                    the red dots. From 22.06.2024 - 09.03.2025, the game will be on display at the <a target="_blank"
+                        href="https://www.technoseum.de/spiel-mit/">Technoseum Mannheim.</a>
+                </p>
+            </div>
+            <div id="project-detail-meta"></div>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-container">
+            <div id="navProjectsBottom" class="nav-element bottom inactive notVisible" onclick="navigateToProjects()">
+                <h4>Projects</h4>
+            </div>
+            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
+                <h4>Experience</h4>
+            </div>
+        </nav>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

@@ -42,13 +42,13 @@
         <div id="projects" class="wrapper">
             <nav class="categories">
                 <ul class="tag-container">
-                    <li><button class="btn tag">All</button></li>
-                    <li><button class="btn tag">User Experience</button></li>
-                    <li><button class="btn tag">3D</button></li>
-                    <li><button class="btn tag">Interaction</button></li>
-                    <li><button class="btn tag">Data Vis</button></li>
-                    <li><button class="btn tag">Installation</button></li>
-                    <li><button class="btn tag">Print</button></li>
+                    <li><button class="btn tag" onclick="showAllEntries('All')" >All</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('User Experience')" >User Experience</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('3D')" >3D</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Interaction')" >Interaction</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Data Vis')" >Data Vis</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Installation')" >Installation</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Print')"  >Print</button></li>
                 </ul>
             </nav>
             <div class="projects-container"></div>

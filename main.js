@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="description details-border"><p>Tags</p>${tagsHTML}</div>
                     <div class="project-year details-border"><p>Year</p> <p>${entry.projectYear}</p></div>
                     <div class="description details-border"><p>Context</p> <p>${entry.projectContext}</p></div>
-                    <div class="description details-border"><p>People</p> <p>${entry.projectPeople}</p></div>
+                    <div class="description details-border"><p>People   </p> <p>${entry.projectPeople}</p></div>
                     <div class="description details-border"><p>Link</p> <a target="_blank" href="${entry.projectLink}">${entry.projectLinkText}</a></div>             
             `;
 

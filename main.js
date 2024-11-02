@@ -4,7 +4,7 @@ function changeLang() {
 }
 
 
-function navigateToShow() {
+/*function navigateToShow() {
     document.getElementById('show').style.display = "block";
     document.getElementById('projects').style.display = "none";
     document.getElementById('experience').style.display = "none";
@@ -57,7 +57,106 @@ function navigateToExperience() {
     document.getElementById('navProjectsBottom').classList.add('notVisible');
     document.getElementById('navExperienceBottom').classList.remove('visible');
     document.getElementById('navExperienceBottom').classList.add('notVisible');
+}*/
+
+
+
+function checkUrl() {
+    const hash = window.location.hash;
+    const id = hash.replace("#", "");
+    if (id === "show") {
+        console.log(id);
+        layoutShow();
+    } else if (id === "projects") {
+        console.log(id);
+        layoutProjects();
+    } else if (id === "experience") {
+        console.log(id);
+        layoutExperience();
+    } else {
+        console.log(id);
+        layoutShow();
+    }
 }
+
+
+
+
+function layoutShow() {
+    const navContainerTop = document.querySelector('.nav-container-top');
+    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top active">Sophie Humbert</div>';
+
+    document.getElementById('show').style.display = "block";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('experience').style.display = "none";
+
+    const navContainerBottom = document.querySelector('.nav-container-bottom');
+    navContainerBottom.innerHTML = '<div onclick="navToProjects()" class="nav-element bottom">Projects</div><div onclick="navToExperience()" class="nav-element bottom">Experience</div>';
+
+
+}
+
+function layoutProjects() {
+    const navContainerTop = document.querySelector('.nav-container-top');
+    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top">Sophie Humbert</div> <div onclick="navToProjects()" class="nav-element top active">Projects</div>';
+
+    document.getElementById('show').style.display = "none";
+    document.getElementById('projects').style.display = "flex";
+    document.getElementById('experience').style.display = "none";
+
+    const navContainerBottom = document.querySelector('.nav-container-bottom');
+    navContainerBottom.innerHTML = '<div onclick="navToExperience()" class="nav-element bottom">Experience</div>';
+
+
+}
+
+function layoutExperience() {
+    const navContainerTop = document.querySelector('.nav-container-top');
+    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top">Sophie Humbert</div><div onclick="navToProjects()" class="nav-element top">Projects</div><div onclick="navToExperience()" class="nav-element top active">Experience</div>';
+
+    document.getElementById('show').style.display = "none";
+    document.getElementById('projects').style.display = "none";
+    document.getElementById('experience').style.display = "flex";
+
+
+    const navContainerBottom = document.querySelector('.nav-container-bottom');
+    navContainerBottom.innerHTML = '';
+}
+
+
+function navToShowreel() {
+    console.log('navToShow');
+    window.location.href = 'index.html#show';
+    checkUrl();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+
+
+}
+
+function navToProjects() {
+    console.log('navToPro');
+    window.location.href = 'index.html#projects';
+    checkUrl();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+}
+
+function navToExperience() {
+    console.log('navToEx');
+    window.location.href = 'index.html#experience';
+    checkUrl()
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+}
+
+
 
 
 
@@ -320,6 +419,7 @@ function showFilteredEntries(tag) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    checkUrl();
     if (document.body.id === 'project-details-page') {
         // ID aus der URL abrufen
         const params = new URLSearchParams(window.location.search);

@@ -156,7 +156,7 @@ function layoutProjectDetails() {
                                             <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
                                         </div>
                                     </div>
-                                    <div onclick="navToProjects()" class="nav-element top active">Projects</div>`;
+                                `;
 
     const navContainerBottom = document.querySelector('.nav-container-bottom');
     navContainerBottom.innerHTML = `
@@ -506,9 +506,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const detailTitle = document.getElementById('project-detail-header')
 
             detailTitle.innerHTML = `
-                    <img src="../icon/arrow-back.svg" alt="close icon">
-                    <p class="project-title">${entry.projectTitle}</p>
-                    
+                    <h4 class="project-title">&nbsp;/&nbsp;${entry.projectTitle}</h4>      
             `;
         }
 

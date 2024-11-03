@@ -10,25 +10,11 @@
 
 <body id="project-details-page">
     <header>
-        <nav class="nav-container">
-            <div id="navShow" class="nav-element top visible" onclick="navigateToShow()">
-                <h4>Sophie Humbert</h4>
-                <div class="wrapper-right">
-                    <div class="socials">
-                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
-                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
-                                src="../icon/behance.svg"></a>
-                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
-                    </div>
-                    <!--<button class="btn" onclick="changeLang()">De</button>-->
-                </div>
-            </div>
-            <div id="navProjectsTop" class="nav-element top active visible">
-                <a href="../index.html">
-                    <div id="project-detail-header"> </div>
-                </a>
-            </div>
-        </nav>
+        <nav class="nav-container-top"></nav>
+        <div class="nav-element top active detail">
+            <a href="../index.html#projects"><h4>Projects</h4></a> 
+            <div id="project-detail-header"></div>
+        </div>
     </header>
     <main class="wrapper">
         <div class="project-detail-container">
@@ -80,14 +66,7 @@
         </div>
     </main>
     <footer>
-        <nav class="nav-container">
-            <div id="navProjectsBottom" class="nav-element bottom inactive notVisible" onclick="navigateToProjects()">
-                <h4>Projects</h4>
-            </div>
-            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
-                <h4>Experience</h4>
-            </div>
-        </nav>
+        <nav class="nav-container-bottom"></nav>
     </footer>
     <script src="../main.js"></script>
 </body>

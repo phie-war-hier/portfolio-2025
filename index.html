@@ -1,55 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie Humbert</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body id="index-page">
     <header>
         <nav class="nav-container-top"></nav>
-        <!-- <nav class="nav-container">
-            <div id="navShowTop" class="nav-element top active visible" onclick="navigateToShow()">
-                <h4>Sophie Humbert</h4>
-                <div class="wrapper-right">
-                    <div class="socials">
-                        <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
-                        <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img
-                                src="icon/behance.svg"></a>
-                        <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
-                    </div>
-                    <button class="btn" onclick="changeLang()">De</button>
-                </div>
-            </div>
-            <div id="navProjectsTop" class="nav-element top notVisible" onclick="navigateToProjects()">
-                <h4>Projects</h4>
-            </div>
-            <div id="navExperienceTop" class="nav-element top notVisible" onclick="navigateToExperience()">
-                <h4>Experience</h4>
-            </div>
-        </nav>-->
     </header>
     <main>
-
-
         <section id="show" class="wrapper">
-            <video loop width="100%" autoplay="true">
+            <video autoplay="true" loop width="100%">
                 <source src="img/sh-showreel-desktop-wip.mov" type="video/mp4" />
             </video>
         </section>
         <section id="projects" class="wrapper">
             <nav class="categories">
                 <ul class="tag-container">
-                    <li><button class="btn tag" onclick="showAllEntries('All')" >All</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('User Experience')" >User Experience</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('3D')" >3D</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('Interaction')" >Interaction</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('Data Vis')" >Data Vis</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('Installation')" >Installation</button></li>
-                    <li><button class="btn tag" onclick="showFilteredEntries('Print')"  >Print</button></li>
+                    <li><button class="btn tag" onclick="showAllEntries('All')">All</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('User Experience')">User
+                            Experience</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('3D')">3D</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Interaction')">Interaction</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Data Vis')">Data Vis</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Installation')">Installation</button></li>
+                    <li><button class="btn tag" onclick="showFilteredEntries('Print')">Print</button></li>
                 </ul>
             </nav>
             <div class="projects-container"></div>
@@ -59,10 +36,11 @@
                 <img src="img/sh-portrait-sophie-humbert-400.webp" alt="Portrait Sophie Humbert sw">
                 <div class="description">
                     <p>An internship at the Mark Lotse agency got me interested in illustration,
-                    communication and web development. In 2020, I started studying communication design at the Faculty
-                    of Design in Mannheim. During my studies, I focused on interactive design, creative coding,
-                    designing spaces and how to combine these passions. In summer 2024, I successfully completed my
-                    studies with my bachelor's thesis Irrlicht.</p>
+                        communication and web development. In 2020, I started studying communication design at the
+                        Faculty
+                        of Design in Mannheim. During my studies, I focused on interactive design, creative coding,
+                        designing spaces and how to combine these passions. In summer 2024, I successfully completed my
+                        studies with my bachelor's thesis Irrlicht.</p>
                     <br>
                     <p>You want to work with me?</p>
                     <p>Write me an email at <a href="mailto:sophie-humbert@posteo.de">sophie-humbert@posteo.de</a></p>
@@ -70,21 +48,8 @@
             </div>
             <div class="experience-container"></div>
         </section>
-
-
-
-
-
     </main>
     <footer>
-       <!-- <nav class="nav-container">
-            <div id="navProjectsBottom" class="nav-element bottom inactive visible" onclick="navigateToProjects()">
-                <h4>Projects</h4>
-            </div>
-            <div id="navExperienceBottom" class="nav-element bottom inactive visible" onclick="navigateToExperience()">
-                <h4>Experience</h4>
-            </div>
-        </nav>-->
         <nav class="nav-container-bottom"></nav>
     </footer>
     <script src="main.js"></script>

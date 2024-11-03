@@ -1,12 +1,12 @@
 :root {
-	--main-color: #1B1B1B;
+    --main-color: #1B1B1B;
     --second-color: #DBDBDB;
-	--accent-color: #6100FF;
+    --accent-color: #6100FF;
     --background-color: #F5F5F5;
-	--font-size-large: 112%;
+    --font-size-large: 112%;
     --font-size-medium: 92%;
     --font-size-small: 76%;
-	--font-auszeichnung: 100%;
+    --font-auszeichnung: 100%;
     --border-weight: 1.5px;
 }
 
@@ -18,22 +18,22 @@
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	-webkit-hyphens: auto; 
-    hyphens: auto; 
-   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
 }
 
 
 body {
     font: var(--font-size-large) "Epilogue-Regular", sans-serif;
-    line-height: 1.2;   
+    line-height: 1.2;
     background-color: var(--background-color);
     color: var(--main-color);
-  
+
 }
 
 h4 {
@@ -47,7 +47,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    
+
 }
 
 footer {
@@ -70,7 +70,7 @@ footer {
     height: auto;
 }
 
-.nav-element { 
+.nav-element {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,7 +103,7 @@ footer {
 }
 
 .active {
-    
+
     background-color: var(--background-color);
 }
 
@@ -134,7 +134,9 @@ a {
     width: 100%;
 }
 
-a:hover, a:active, a:visited {
+a:hover,
+a:active,
+a:visited {
     color: var(--main-color);
 }
 
@@ -144,7 +146,7 @@ a:hover, a:active, a:visited {
     border: var(--border-weight) solid var(--main-color);
     font-size: var(--font-size-small);
     background-color: var(--main-color);
-    color: var(--background-color);   
+    color: var(--background-color);
 }
 
 .wrapper {
@@ -176,7 +178,7 @@ a:hover, a:active, a:visited {
 
 /* Categories Nav in project tab, only visible in desktop version*/
 .categories {
-        display: block;        
+    display: block;
 
 }
 
@@ -202,7 +204,8 @@ a:hover, a:active, a:visited {
     color: var(--main-color);
 }
 
-.btn.tag:hover, .btn.tag:active {
+.btn.tag:hover,
+.btn.tag:active {
     background-color: var(--main-color);
     color: var(--background-color);
 }
@@ -233,7 +236,7 @@ ul {
     gap: 0.6rem;
     border: var(--border-weight) solid var(--main-color);
     padding-block-end: 0.4rem;
-    
+
 
     @media (min-width: 600px) {
         width: 48%;
@@ -252,7 +255,8 @@ ul {
     }
 }
 
-.projects-element:hover, .projects-element:active {
+.projects-element:hover,
+.projects-element:active {
     background-color: var(--main-color);
     color: var(--background-color);
 
@@ -271,12 +275,12 @@ ul {
     height: 40%;
 
     @media (min-width: 600px) {
-        height: auto;       
+        height: auto;
     }
 
     @media (min-width: 900px) {
-        height: auto; 
-    }    
+        height: auto;
+    }
 }
 
 .project-tags {
@@ -290,7 +294,7 @@ ul {
 }
 
 #project-detail-meta .project-tags {
-    padding-inline: 0;  
+    padding-inline: 0;
 }
 
 .project-year {
@@ -305,16 +309,16 @@ ul {
 .description {
     padding-inline: 0.4rem;
     font-size: var(--font-size-medium);
-    
+
 }
 
 .gallery .description {
     padding-inline: 0;
-    
+
     @media (min-width: 1200px) {
-        width: 76%; 
+        width: 76%;
     }
-    
+
 }
 
 /*
@@ -333,7 +337,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    
+
 
     @media (min-width: 900px) {
         flex-grow: 1;
@@ -373,24 +377,24 @@ ul {
     @media (min-width: 900px) {
         width: 20%;
         flex-grow: 6;
-        overflow-y: auto; 
+        overflow-y: auto;
         height: 70vh;
-        
+
     }
 
     @media (min-width: 1200px) {
         width: 20%;
         flex-grow: 10;
-        overflow-y: auto; 
-        height: 78vh;      
+        overflow-y: auto;
+        height: 78vh;
     }
- 
+
 }
 
 
 #project-details-page {
     @media (min-width: 900px) {
-        overflow: hidden;        
+        overflow: hidden;
     }
 }
 
@@ -440,7 +444,7 @@ ul {
 
 #introduction {
     /*border: var(--border-weight) solid var(--main-color);*/
-    
+
     @media (min-width: 600px) {
         display: flex;
         flex-direction: row;
@@ -450,18 +454,18 @@ ul {
 
     @media (min-width: 900px) {
         width: 80%;
-        
+
     }
 
     @media (min-width: 1200px) {
         width: 66%;
-        
+
     }
 
     .description {
         padding-block: 0.6rem;
 
-       
+
     }
 
 }
@@ -480,24 +484,31 @@ ul {
 
 /* Breite der Scroll-Leiste */
 ::-webkit-scrollbar {
-    width: 16px; /* Breite der vertikalen Scroll-Leiste */
-    height: 16px; /* Höhe der horizontalen Scroll-Leiste */
+    width: 16px;
+    /* Breite der vertikalen Scroll-Leiste */
+    height: 16px;
+    /* Höhe der horizontalen Scroll-Leiste */
 }
 
 /* Hintergrund der Scroll-Leiste */
 ::-webkit-scrollbar-track {
-    background: var(--second-color); /* Hintergrundfarbe des Scroll-Tracks */
-    border: var(--border-weight) solid var(--main-color); /* Optionaler Rand für den Scrollbalken */
+    background: var(--second-color);
+    /* Hintergrundfarbe des Scroll-Tracks */
+    border: var(--border-weight) solid var(--main-color);
+    /* Optionaler Rand für den Scrollbalken */
 }
 
 /* Farbe des Scrollbalkens */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--background-color); /* Farbe des Scrollbalkens */
-    border: var(--border-weight) solid var(--main-color); /* Optionaler Rand für den Scrollbalken */
+    background-color: var(--background-color);
+    /* Farbe des Scrollbalkens */
+    border: var(--border-weight) solid var(--main-color);
+    /* Optionaler Rand für den Scrollbalken */
 }
 
 /* Hover-Effekt für den Scrollbalken */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--main-color); /* Farbe beim Hover über den Scrollbalken */
+    background: var(--main-color);
+    /* Farbe beim Hover über den Scrollbalken */
     cursor: grab;
 }

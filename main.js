@@ -4,6 +4,15 @@ function changeLang() {
 }
 
 
+window.addEventListener("load", function () {
+    // Scrollt das Dokument vor dem Laden der neuen Seite nach oben
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+
+
 var path;
 
 function getPath() {
@@ -66,7 +75,7 @@ function layoutShow() {
 function layoutProjects() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
-                                    <div class="nav-element top">
+                                    <div onclick="navToShowreel()" class="nav-element top">
                                         <h4>Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
@@ -155,7 +164,7 @@ function navToProjects() {
         window.location.href = '../index.html#projects';
     } else {
         window.location.href = 'index.html#projects';
-    } 
+    }
     checkUrl();
     window.scrollTo({
         top: 0,
@@ -169,7 +178,7 @@ function navToExperience() {
         window.location.href = '../index.html#experience';
     } else {
         window.location.href = 'index.html#experience';
-    } 
+    }
     checkUrl()
     window.scrollTo({
         top: 0,
@@ -440,13 +449,13 @@ function showFilteredEntries(tag) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
     if (document.body.id === 'project-details-page') {
-       getPath(); 
+        getPath();
         if (path === "projects") {
             layoutProjectDetails();
         }
-   
+
 
         // ID aus der URL abrufen
         const params = new URLSearchParams(window.location.search);

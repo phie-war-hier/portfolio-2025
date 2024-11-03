@@ -60,10 +60,21 @@ function navigateToExperience() {
 }*/
 
 
+function checkPath() {
+    const url = new URL(window.location.href);
+    const pathSegments = url.pathname.split("/");  // Teilt den Pfad in Segmente
+    const path = pathSegments[pathSegments.length - 2];  // Nimmt das vorletzte Segment, z. B. "123"
+    console.log(path);
+
+    if (path === "projects") {
+        layoutProjectDetails();
+    }
+}
 
 function checkUrl() {
     const hash = window.location.hash;
     const id = hash.replace("#", "");
+
     if (id === "show") {
         console.log(id);
         layoutShow();
@@ -77,6 +88,7 @@ function checkUrl() {
         console.log(id);
         layoutShow();
     }
+
 }
 
 
@@ -84,35 +96,89 @@ function checkUrl() {
 
 function layoutShow() {
     const navContainerTop = document.querySelector('.nav-container-top');
-    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top active">Sophie Humbert</div>';
+    navContainerTop.innerHTML = `
+                                    <div onclick="navToShowreel()" class="nav-element top active">
+                                        <h4>Sophie Humbert</h4>
+                                        <div class="socials">
+                                            <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
+                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
+                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
+                                        </div>
+                                    </div>
+                                `;
 
     document.getElementById('show').style.display = "block";
     document.getElementById('projects').style.display = "none";
     document.getElementById('experience').style.display = "none";
 
     const navContainerBottom = document.querySelector('.nav-container-bottom');
-    navContainerBottom.innerHTML = '<div onclick="navToProjects()" class="nav-element bottom">Projects</div><div onclick="navToExperience()" class="nav-element bottom">Experience</div>';
+    navContainerBottom.innerHTML = `
+                                        <div onclick="navToProjects()" class="nav-element bottom">Projects</div>
+                                        <div onclick="navToExperience()" class="nav-element bottom">Experience</div>
+                                    `;
 
 
 }
 
 function layoutProjects() {
     const navContainerTop = document.querySelector('.nav-container-top');
-    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top">Sophie Humbert</div> <div onclick="navToProjects()" class="nav-element top active">Projects</div>';
+    navContainerTop.innerHTML = `
+                                    <div onclick="navToShowreel()" class="nav-element top">
+                                        <h4>Sophie Humbert</h4>
+                                        <div class="socials">
+                                            <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
+                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
+                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
+                                        </div>
+                                    </div>
+                                    <div onclick="navToProjects()" class="nav-element top active">Projects</div>`;
 
     document.getElementById('show').style.display = "none";
     document.getElementById('projects').style.display = "flex";
     document.getElementById('experience').style.display = "none";
 
     const navContainerBottom = document.querySelector('.nav-container-bottom');
-    navContainerBottom.innerHTML = '<div onclick="navToExperience()" class="nav-element bottom">Experience</div>';
+    navContainerBottom.innerHTML = `
+                                        <div onclick="navToExperience()" class="nav-element bottom">Experience</div>
+                                    `;
 
 
 }
 
+function layoutProjectDetails() {
+    const navContainerTop = document.querySelector('.nav-container-top');
+    navContainerTop.innerHTML = `
+                                    <div onclick="navToShowreel()" class="nav-element top">
+                                        <h4>Sophie Humbert</h4>
+                                        <div class="socials">
+                                            <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
+                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="../icon/behance.svg"></a>
+                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
+                                        </div>
+                                    </div>
+                                    <div onclick="navToProjects()" class="nav-element top active">Projects</div>`;
+
+    const navContainerBottom = document.querySelector('.nav-container-bottom');
+    navContainerBottom.innerHTML = `
+                                        <div onclick="navToExperience()" class="nav-element bottom">Experience</div>
+                                    `;
+}
+
+
 function layoutExperience() {
     const navContainerTop = document.querySelector('.nav-container-top');
-    navContainerTop.innerHTML = '<div onclick="navToShowreel()" class="nav-element top">Sophie Humbert</div><div onclick="navToProjects()" class="nav-element top">Projects</div><div onclick="navToExperience()" class="nav-element top active">Experience</div>';
+    navContainerTop.innerHTML = `
+                                    <div onclick="navToShowreel()" class="nav-element top">
+                                        <h4>Sophie Humbert</h4>
+                                        <div class="socials">
+                                            <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
+                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
+                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
+                                        </div>
+                                    </div>
+                                    <div onclick="navToProjects()" class="nav-element top">Projects</div>
+                                    <div onclick="navToExperience()" class="nav-element top active">Experience</div>
+                                `;
 
     document.getElementById('show').style.display = "none";
     document.getElementById('projects').style.display = "none";
@@ -131,7 +197,7 @@ function navToShowreel() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth',
-      });
+    });
 
 
 }
@@ -143,7 +209,7 @@ function navToProjects() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth',
-      });
+    });
 }
 
 function navToExperience() {
@@ -153,7 +219,7 @@ function navToExperience() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth',
-      });
+    });
 }
 
 
@@ -419,8 +485,11 @@ function showFilteredEntries(tag) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    checkUrl();
+    
     if (document.body.id === 'project-details-page') {
+       checkPath(); 
+        
+
         // ID aus der URL abrufen
         const params = new URLSearchParams(window.location.search);
         const entryId = parseInt(params.get('id'));  // Konvertiert in eine Zahl
@@ -467,6 +536,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     } else if (document.body.id === 'index-page') {
         // Funktion nur für die Startseite
+        checkUrl();
         showAllEntries();
 
 

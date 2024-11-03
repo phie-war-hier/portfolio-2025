@@ -59,17 +59,15 @@ function navigateToExperience() {
     document.getElementById('navExperienceBottom').classList.add('notVisible');
 }*/
 
+var path;
 
-function checkPath() {
+function getPath() {
     const url = new URL(window.location.href);
     const pathSegments = url.pathname.split("/");  // Teilt den Pfad in Segmente
-    const path = pathSegments[pathSegments.length - 2];  // Nimmt das vorletzte Segment, z. B. "123"
+    path = pathSegments[pathSegments.length - 2];  // Nimmt das vorletzte Segment, z. B. "123"
     console.log(path);
-
-    if (path === "projects") {
-        layoutProjectDetails();
-    }
 }
+
 
 function checkUrl() {
     const hash = window.location.hash;
@@ -123,7 +121,7 @@ function layoutShow() {
 function layoutProjects() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
-                                    <div onclick="navToShowreel()" class="nav-element top">
+                                    <div class="nav-element top">
                                         <h4>Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
@@ -148,8 +146,8 @@ function layoutProjects() {
 function layoutProjectDetails() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
-                                    <div onclick="navToShowreel()" class="nav-element top">
-                                        <h4>Sophie Humbert</h4>
+                                    <div class="nav-element top">
+                                        <h4 onclick="navToShowreel()">Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
                                             <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="../icon/behance.svg"></a>
@@ -191,8 +189,12 @@ function layoutExperience() {
 
 
 function navToShowreel() {
-    console.log('navToShow');
-    window.location.href = 'index.html#show';
+    getPath();
+    if (path === "projects" || path === "experience") {
+        window.location.href = '../index.html#show';
+    } else {
+        window.location.href = 'index.html#show';
+    }
     checkUrl();
     window.scrollTo({
         top: 0,
@@ -203,8 +205,12 @@ function navToShowreel() {
 }
 
 function navToProjects() {
-    console.log('navToPro');
-    window.location.href = 'index.html#projects';
+    getPath();
+    if (path === "projects" || path === "experience") {
+        window.location.href = '../index.html#projects';
+    } else {
+        window.location.href = 'index.html#projects';
+    } 
     checkUrl();
     window.scrollTo({
         top: 0,
@@ -213,8 +219,12 @@ function navToProjects() {
 }
 
 function navToExperience() {
-    console.log('navToEx');
-    window.location.href = 'index.html#experience';
+    getPath();
+    if (path === "projects" || path === "experience") {
+        window.location.href = '../index.html#experience';
+    } else {
+        window.location.href = 'index.html#experience';
+    } 
     checkUrl()
     window.scrollTo({
         top: 0,
@@ -487,8 +497,11 @@ function showFilteredEntries(tag) {
 document.addEventListener('DOMContentLoaded', function () {
     
     if (document.body.id === 'project-details-page') {
-       checkPath(); 
-        
+       getPath(); 
+        if (path === "projects") {
+            layoutProjectDetails();
+        }
+   
 
         // ID aus der URL abrufen
         const params = new URLSearchParams(window.location.search);

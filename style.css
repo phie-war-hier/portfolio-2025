@@ -39,6 +39,7 @@ body {
 h4 {
     font-weight: normal;
     padding-block-start: 0.4rem;
+    width: 100%;
 }
 
 header {

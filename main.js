@@ -29,17 +29,20 @@ function checkUrl() {
     if (id === "show") {
         console.log(id);
         layoutShow();
+        document.getElementById("index-page").classList.add("no-scroll");
     } else if (id === "projects") {
         console.log(id);
         layoutProjects();
+        document.getElementById("index-page").classList.remove("no-scroll");
     } else if (id === "experience") {
         console.log(id);
         layoutExperience();
+        document.getElementById("index-page").classList.add("no-scroll");
     } else {
         console.log(id);
         layoutShow();
+        document.getElementById("index-page").classList.add("no-scroll");
     }
-
 }
 
 

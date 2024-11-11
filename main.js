@@ -12,7 +12,6 @@ window.addEventListener("load", function () {
     });
 });
 
-
 var path;
 
 function getPath() {
@@ -321,6 +320,20 @@ const projectsEntries = [
         projectLink: "",
         projectLinkText: "",
         projectDescription: "A concept for an installation to raise awareness of the issue of underwater noise."
+    },
+    {
+        id: 10,
+        projectPage: "projects/captchafestival.html",
+        projectTitle: "Captcha Design Festival",
+        projectCoverimage: "img/at-captchafestival-coverbild-800.webp",
+        alt: "Captcha Design Festial",
+        projectTag: ["Event"],
+        projectYear: 2022,
+        projectContext: "Captcha Design Festival is organized by students of the University of Applied Sciences Mannheim.",
+        projectPeople: ["Michelle Michewicz, Julia Strauch, Lena Rass, Lara Tottewitz, Ronja Freundt, Moritz Schwall, Daniel Klose, Sophie Humbert"],
+        projectLink: "https://www.captcha-mannheim.de/",
+        projectLinkText: "Captcha Design Festival website",
+        projectDescription: "Captcha is a design festival organized by students of the university of applied sciences mannheim."
     }
 ];
 
@@ -374,6 +387,13 @@ const experienceEntries = [
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Working student in sales at Markthaus Mannheim gGmbH"
+    },
+    {
+        experienceTag: "Internship",
+        experienceYear: 2019,
+        experienceLink: "",
+        experienceLinkText: "",
+        experienceDescription: "Internship at Mark Lotse Landau"
     }
 ];
 

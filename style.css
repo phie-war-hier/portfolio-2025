@@ -160,6 +160,33 @@ a:visited {
     padding-block-end: 6rem;
 }
 
+video {
+    max-width: 100%;
+    /* Passt die Breite auf 100% des Containers an */
+    height: auto;
+    /* Behält das Seitenverhältnis bei */
+    display: block;
+    /* Entfernt unerwünschten Abstand unter dem Video */
+    margin: 0 auto;
+    /* Zentriert das Video */
+}
+
+#video-landscape {
+        display: none;
+  
+}
+
+/* Querformat Video anzeigen, wenn die Bildschirmbreite größer als die Höhe ist */
+@media (min-width: 500px) {
+    #video-landscape {
+        display: block;
+    }
+
+    #video-portrait {
+        display: none;
+    }
+}
+
 
 
 #show {

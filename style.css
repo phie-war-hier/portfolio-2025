@@ -113,12 +113,11 @@ footer {
 }
 
 
-
 .socials {
     padding-block-start: 0.4rem;
     display: flex;
+    flex-direction: row;
     gap: 0.6rem;
-
 }
 
 /* Buttons in general */
@@ -481,6 +480,7 @@ ul {
 #introduction {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 0.6rem;
     font-size: 140%;
 
@@ -496,37 +496,54 @@ ul {
         font-size: 172%;
     }
 
-    /*border: var(--border-weight) solid var(--main-color);
+}
 
-    @media (min-width: 600px) {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        padding-inline-end: 0.4rem;
-    }
-
+p #introduction {
+    font-size: 140%;
     @media (min-width: 900px) {
-        width: 80%;
-
+        font-size: 148%;
     }
 
     @media (min-width: 1200px) {
-        width: 66%;
+        font-size: 172%;
+    }
+}
 
+#introduction .otherLinks {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        gap: 0.6rem;
+        font-size: var(--font-size-small);
+        a {
+            width: auto;
+        }
     }
 
-    .description {
-        padding-block: 0.6rem;
+}
 
+.otherLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    font-size: var(--font-size-small);
 
-    }*/
+    a {
+        width: auto;
+    }
+
+    @media (min-width: 900px) {
+        display: none;
+    }
 
 }
 
 
 .no-scroll {
     @media (min-width: 900px) {
-        overflow: hidden;   
+        overflow: hidden;
     }
 }
 

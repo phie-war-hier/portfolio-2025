@@ -524,6 +524,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     } else if (document.body.id === 'index-page') {
         // Funktion nur für die Startseite
+        const videoLand = document.getElementById("video-landscape");
+        videoLand.play().catch(error => {
+            console.error("Autoplay-Fehler: ", error);
+        });
+
+        const videoPort = document.getElementById("video-portrait");
+        videoPort.play().catch(error => {
+            console.error("Autoplay-Fehler: ", error);
+        });
+
         checkUrl();
         showAllEntries();
 

@@ -207,6 +207,7 @@ const projectsEntries = [
         projectTag: ["User Experience", "Interaction"],
         projectYear: 2023,
         projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the Human Data Interaction Lab (HDIL).",
+        projectClient: "–",
         projectPeople: [" Till Nagel", " Christoph Huber", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/smart-roots/",
         projectLinkText: "Project sMArt roots at the HDIL",
@@ -221,6 +222,7 @@ const projectsEntries = [
         projectTag: ["Data Vis", "Interaction"],
         projectYear: 2024,
         projectContext: "The AR Data Experience Point is a research project of the Human Data Interaction Lab at Mannheim University of Applied Sciences.",
+        projectClient: "–",
         projectPeople: ["Till Nagel", " Christoph Huber", " Ekkehard Petzold", " Sophie Humbert"],
         projectLink: "https://www.hdilab.org/projects/ar-dxp/",
         projectLinkText: "Project AR DXP at the HDIL",
@@ -235,6 +237,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "Data Vis", "Installation"],
         projectYear: 2024,
         projectContext: " Irrlicht was created in 2024 as a bachelor's thesis supervised by Prof. Hartmut Wöhlbier and Prof. Dr. Till Nagel at the Faculty of Design Mannheim.",
+        projectClient: "–",
         projectPeople: ["Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
@@ -249,6 +252,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "User Experience"],
         projectYear: 2023,
         projectContext: "The Rocket Deployer was developed in cooperation with a company in the semester development project at Mannheim University of Applied Sciences.",
+        projectClient: "–",
         projectPeople: ["Design: Sophie Humbert", " Eddi Bludau", " Computer Science: Lauritz Fuchs", " Dominik Koschik", " Yan Wittmann", " Julian Komarek", " Jonas Fügen"],
         projectLink: "",
         projectLinkText: "",
@@ -263,6 +267,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "Installation"],
         projectYear: 2022,
         projectContext: "planta was designed as a group project in the Interactive Media course at the Faculty of Design Mannheim. The installation was shown in the exhibition Captcha 2022 at the Mannheimer Kunstverein.",
+        projectClient: "–",
         projectPeople: ["Paco Gutiérrez Hardt", " Teresa Hoffmann", " Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
@@ -277,6 +282,7 @@ const projectsEntries = [
         projectTag: ["Interaction", "Game"],
         projectYear: 2023,
         projectContext: "The game was developed as a group project in the “Games Night” course at the Faculty of Design in Mannheim.",
+        projectClient: "–",
         projectPeople: ["Paco Gutiérrez Hardt (Design)", " Teresa Hoffmann (Design)", " Sophie Humbert (Design)", " Christian Fagherazzi (Computer science)"],
         projectLink: "",
         projectLinkText: "",
@@ -291,6 +297,7 @@ const projectsEntries = [
         projectTag: ["3D", "Game"],
         projectYear: 2024,
         projectContext: "The Tetris Room was realized as a student research project and is part of the Virtual Lab project at the Faculty of Design Mannheim.",
+        projectClient: "–",
         projectPeople: ["Sophie Humbert", " Teresa Hoffmann"],
         projectLink: "",
         projectLinkText: "",
@@ -305,6 +312,7 @@ const projectsEntries = [
         projectTag: ["3D", "Motion"],
         projectYear: 2022,
         projectContext: "The animation was created in the course Visualization with 3D at the Faculty of Design Mannheim.",
+        projectClient: "–",
         projectPeople: ["Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
@@ -319,6 +327,7 @@ const projectsEntries = [
         projectTag: ["Installation", "Data Vis"],
         projectYear: 2023,
         projectContext: "The work was created in the winter semester 22/23 in the course Communication in Space at the Faculty of Design Mannheim.",
+        projectClient: "–",
         projectPeople: ["Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
@@ -330,13 +339,29 @@ const projectsEntries = [
         projectTitle: "Captcha Design Festival",
         projectCoverimage: "img/at-captchafestival-coverbild-800.webp",
         alt: "Captcha Design Festial",
-        projectTag: ["Event"],
+        projectTag: ["Event", "Exhibition"],
         projectYear: 2022,
         projectContext: "Captcha Design Festival is organized by students of the University of Applied Sciences Mannheim.",
+        projectClient: "–",
         projectPeople: ["Michelle Michewicz, Julia Strauch, Lena Rass, Lara Tottewitz, Ronja Freundt, Moritz Schwall, Daniel Klose, Sophie Humbert"],
         projectLink: "https://www.captcha-mannheim.de/",
         projectLinkText: "Captcha Design Festival website",
         projectDescription: "Captcha is a design festival organized by students of the university of applied sciences mannheim."
+    },
+    {
+        id: 11,
+        projectPage: "projects/technoarena.html",
+        projectTitle: "TECHNOarena",
+        projectCoverimage: "img/sh-technoarena-3dmodell-uebersichtarena-begrueßungslicht-coverbild-800.webp",
+        alt: "TECHNOarena",
+        projectTag: ["Installation", "Exhibition"],
+        projectYear: 2025,
+        projectContext: "The design concept of the TECHNOarena was created as a result of my freelance work at the TECHNOaseum Mannheim.",
+        projectClient: "TECHNOseum Mannheim",
+        projectPeople: ["Sophie Humbert (Design), Conni Robe (Animation), Heike Morath (TECHNOseum Graphic), Ulrich Plaputta (TECHNOseum Graphic), Anna Tasja Kammholz (TECHNOseum Project management), Eva Gramlich (TECHNOseum Exhibition), Benjamin Otto (TECHNOseum Exhibition)"],
+        projectLink: "https://www.technoseum.de/",
+        projectLinkText: "Technoseum website",
+        projectDescription: "The design concept of the TECHNOarena reflects the atmosphere of the future and gives each person the freedom to imagine. What will the world look like in the future?"
     }
 ];
 
@@ -397,6 +422,13 @@ const experienceEntries = [
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Internship at Mark Lotse Landau"
+    },
+    {
+        experienceTag: "Freelancing",
+        experienceYear: 2025,
+        experienceLink: "",
+        experienceLinkText: "",
+        experienceDescription: "I am working as a freelancer since the beginning of 2025 for different clients"
     }
 ];
 
@@ -513,6 +545,7 @@ document.addEventListener('DOMContentLoaded', function () {
             detailContainer.innerHTML = `
                     <div class="description details-border"><p>Tags</p>${tagsHTML}</div>
                     <div class="project-year details-border"><p>Year</p> <p>${entry.projectYear}</p></div>
+                    <div class="description details-border"><p>Client</p> <p>${entry.projectClient}</p></div>
                     <div class="description details-border"><p>Context</p> <p>${entry.projectContext}</p></div>
                     <div class="description details-border"><p>People   </p> <p>${entry.projectPeople}</p></div>            
             `;

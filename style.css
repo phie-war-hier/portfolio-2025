@@ -184,7 +184,7 @@ video {
 }
 
 /* Querformat Video anzeigen, wenn die Bildschirmbreite größer als die Höhe ist */
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     #video-landscape {
         display: block;
     }

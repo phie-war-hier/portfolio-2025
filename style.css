@@ -177,13 +177,13 @@ video {
     margin: 0 auto;
     /* Zentriert das Video */
 }
-
+/*
 #video-landscape {
     display: none;
 
 }
 
-/* Querformat Video anzeigen, wenn die Bildschirmbreite größer als die Höhe ist */
+Querformat Video anzeigen, wenn die Bildschirmbreite größer als die Höhe ist 
 @media (min-width: 600px) {
     #video-landscape {
         display: block;
@@ -193,7 +193,22 @@ video {
         display: none;
     }
 }
+*/
 
+button#unmuteButton {
+    background-color: var(--background-color);
+    padding-block: 0.3rem 0.2rem;
+    padding-inline: 0.3rem;
+    border-radius: 1.6px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 120px;
+    left: 20px;
+
+    @media (min-width: 1600px) {
+        left: 96px;
+    }
+}
 
 
 #show {

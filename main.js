@@ -145,6 +145,10 @@ function layoutExperience() {
 
 
 function navToShowreel() {
+
+    // Video ausführen
+    updateVideoSource();
+    
     getPath();
     if (path === "projects" || path === "experience") {
         window.location.href = '../index.html#show';
@@ -156,11 +160,14 @@ function navToShowreel() {
         top: 0,
         behavior: 'smooth',
     });
-
-
 }
 
 function navToProjects() {
+    const video = document.getElementById("responsiveVideo");
+    if (video) {
+        video.muted = true;
+    }
+
     getPath();
     if (path === "projects" || path === "experience") {
         window.location.href = '../index.html#projects';
@@ -175,6 +182,11 @@ function navToProjects() {
 }
 
 function navToExperience() {
+      const video = document.getElementById("responsiveVideo");
+    if (video) {
+        video.muted = true;
+    }
+
     getPath();
     if (path === "projects" || path === "experience") {
         window.location.href = '../index.html#experience';
@@ -541,16 +553,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
     } else if (document.body.id === 'index-page') {
-        // Funktion nur für die Startseite
-        const videoLand = document.getElementById("video-landscape");
-        videoLand.play().catch(error => {
-            console.error("Autoplay-Fehler: ", error);
-        });
 
-        const videoPort = document.getElementById("video-portrait");
-        videoPort.play().catch(error => {
-            console.error("Autoplay-Fehler: ", error);
-        });
+        // Beim Laden der Seite ausführen
+        window.addEventListener("load", updateVideoSource);
+
+        // Optional: auch bei Fenstergrößenänderung
+        window.addEventListener("resize", updateVideoSource);
+        
+        // Funktion nur für die Startseite
+        //const videoLand = document.getElementById("video-landscape");
+        //videoLand.play().catch(error => {
+         //   console.error("Autoplay-Fehler: ", error);
+        //});
+
+        //const videoPort = document.getElementById("video-portrait");
+        //videoPort.play().catch(error => {
+         //   console.error("Autoplay-Fehler: ", error);
+        //});
 
         checkUrl();
         showAllEntries();
@@ -583,3 +602,45 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+
+
+
+
+function updateVideoSource() {
+    const video = document.getElementById("responsiveVideo");
+    const source = document.getElementById("videoSource");
+    const width = window.innerWidth;
+
+    let newSrc = "";
+
+    if (width >= 700) {
+        newSrc = "img/2025-05-12-ShowreelPortfolio-Querformat.mov";
+    } else {
+        newSrc = "img/2025-05-12-ShowreelPortfolio-Hochformat.mov";
+    } 
+
+    // Nur neu laden, wenn sich die Quelle geändert hat
+    if (source.getAttribute("src") !== newSrc) {
+        source.setAttribute("src", newSrc);
+        video.load();  // lädt neue Quelle
+        video.play();  // spielt automatisch ab (vorausgesetzt autoplay ist erlaubt)
+    } 
+
+    const unmutebutton = document.getElementById("unmuteButton");
+    const unmuteIcon = document.getElementById("unmuteIcon");
+
+    unmuteButton.addEventListener("click", function() {
+    // Schaltet den Mute-Status um
+    video.muted = !video.muted;
+
+    // Wechselt das Icon je nach Mute-Status
+    if (video.muted) {
+        unmuteIcon.src = "icon/sound-off.svg";  
+        unmuteIcon.alt = "Mute Icon";
+    } else {
+        unmuteIcon.src = "icon/sound-on.svg";  
+        unmuteIcon.alt = "Unmute Icon";
+    }
+    });
+}

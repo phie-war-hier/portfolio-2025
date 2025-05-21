@@ -195,6 +195,8 @@ Querformat Video anzeigen, wenn die Bildschirmbreite größer als die Höhe ist
 }
 */
 
+
+
 button#unmuteButton {
     background-color: var(--background-color);
     padding-block: 0.3rem 0.2rem;
@@ -458,7 +460,10 @@ ul {
 }
 
 
-
+img {
+    width: 100%;
+    height: auto;
+}
 
 .experience-container {
     display: flex;
@@ -493,6 +498,7 @@ ul {
 }
 
 #introduction {
+    padding-block-start: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: start;

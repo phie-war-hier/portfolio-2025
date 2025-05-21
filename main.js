@@ -615,9 +615,9 @@ function updateVideoSource() {
     let newSrc = "";
 
     if (width >= 700) {
-        newSrc = "img/2025-05-12-ShowreelPortfolio-Querformat.mov";
+        newSrc = "img/2025-05-12-ShowreelPortfolio-Querformat-Klein.mov";
     } else {
-        newSrc = "img/2025-05-12-ShowreelPortfolio-Hochformat.mov";
+        newSrc = "img/2025-05-12-ShowreelPortfolio-Hochformat-Klein.mov";
     } 
 
     // Nur neu laden, wenn sich die Quelle geändert hat

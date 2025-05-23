@@ -359,6 +359,21 @@ const projectsEntries = [
         projectLink: "https://www.captcha-mannheim.de/",
         projectLinkText: "Captcha Design Festival website",
         projectDescription: "Captcha is a design festival organized by students of the university of applied sciences mannheim."
+    },
+    {
+        id: 11,
+        projectPage: "projects/technoarena.html",
+        projectTitle: "TECHNOarena",
+        projectCoverimage: "img/sh-technoarena-3dmodell-uebersichtarena-begrueßungslicht-coverbild-800.webp",
+        alt: "TECHNOarena",
+        projectTag: ["Installation", "Exhibition"],
+        projectYear: 2025,
+        projectContext: "The design concept of the TECHNOarena was created as a result of my freelance work at the TECHNOseum Mannheim.",
+        projectClient: "TECHNOseum Mannheim",
+        projectPeople: ["Sophie Humbert (Design), Conni Robe (Animation Illustrations), Heike Morath (TECHNOseum Graphic Design), Ulrich Plaputta (TECHNOseum Graphic Design), Anna Tasja Kammholz (TECHNOseum Project Lead), Eva Gramlich (TECHNOseum Exhibition), Benjamin Otto (TECHNOseum Exhibition)"],
+        projectLink: "https://www.technoseum.de/",
+        projectLinkText: "Technoseum website",
+        projectDescription: "The design concept of the TECHNOarena reflects the atmosphere of the future and gives each person the freedom to imagine. What will the world look like in the future?"
     }
 ];
 

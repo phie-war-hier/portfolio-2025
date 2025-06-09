@@ -308,9 +308,9 @@ const projectsEntries = [
         alt: "User Experience",
         projectTag: ["3D", "Game"],
         projectYear: 2024,
-        projectContext: "The Tetris Room was realized as a student research project and is part of the Virtual Lab project at the Faculty of Design Mannheim.",
+        projectContext: "The Tetris Room was realized as a student research project at the Faculty of Design Mannheim.",
         projectClient: "",
-        projectPeople: ["Sophie Humbert", " Teresa Hoffmann"],
+        projectPeople: ["Sophie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
@@ -368,12 +368,13 @@ const projectsEntries = [
         alt: "TECHNOarena",
         projectTag: ["Installation", "Exhibition"],
         projectYear: 2025,
-        projectContext: "The design concept of the TECHNOarena was created as a result of my freelance work at the TECHNOseum Mannheim.",
-        projectClient: "TECHNOseum Mannheim",
-        projectPeople: ["Sophie Humbert (Design), Conni Robe (Animation Illustrations), Heike Morath (TECHNOseum Graphic Design), Ulrich Plaputta (TECHNOseum Graphic Design), Anna Tasja Kammholz (TECHNOseum Project Lead), Eva Gramlich (TECHNOseum Exhibition), Benjamin Otto (TECHNOseum Exhibition)"],
+        projectContext: "The design concept of the TECHNOarena was created during my freelance work at the TECHNOSEUM Mannheim.",
+        projectClient: "TECHNOSEUM Mannheim",
+        projectClientLink: "https://www.technoseum.de/",
+        projectPeople: ["Sophie Humbert (Design), Conni Robe (Animation Illustrations)<br>TECHNOSEUM: Heike Morath (Graphic), Ulrich Plaputta (Graphic), Anna Tasja Kammholz (Project Lead), Eva Gramlich (Exhibition)"],
         projectLink: "https://www.technoseum.de/",
-        projectLinkText: "Technoseum website",
-        projectDescription: "The design concept of the TECHNOarena reflects the atmosphere of the future and gives each person the freedom to imagine. What will the world look like in the future?"
+        projectLinkText: "TECHNOarena",
+        projectDescription: "The design concept of the TECHNOarena reflects the atmosphere of the future and gives each person the freedom to imagine. What will the world look like in the future?"        
     }
 ];
 
@@ -557,9 +558,9 @@ document.addEventListener('DOMContentLoaded', function () {
             detailContainer.innerHTML = `
                     <div class="description details-border"><p>Tags</p>${tagsHTML}</div>
                     <div class="project-year details-border"><p>Year</p> <p>${entry.projectYear}</p></div>
-                    ${entry.projectClient ? `<div class="description details-border"><p>Client</p> <p>${entry.projectClient}</p></div>` : ""}
+                    ${entry.projectClient ? `<div class="description details-border"><p>Client</p> <a target="_blank" href="${entry.projectClientLink}">${entry.projectClient}</a></div>` : ""}
                     <div class="description details-border"><p>Context</p> <p>${entry.projectContext}</p></div>
-                    <div class="description details-border"><p>People   </p> <p>${entry.projectPeople}</p></div>            
+                    <div class="description details-border"><p>People   </p> <p>${entry.projectPeople}</p></div>                            
             `;
 
         } else {

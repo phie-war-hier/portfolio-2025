@@ -374,12 +374,19 @@ ul {
 
 .gallery .description {
     padding-inline: 0.4rem;
+}
+
+.gallery .description-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 
     @media (min-width: 1200px) {
-        width: 90%;
+        flex-direction: row;
+        
     }
-
 }
+
 
 /*
 #project-detail-header {
@@ -452,6 +459,11 @@ ul {
 
 }
 
+
+p.subtitle {
+    font-size: small; 
+    padding-top: 0.6rem;
+}
 
 #project-details-page {
     @media (min-width: 900px) {

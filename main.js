@@ -437,12 +437,19 @@ const experienceEntries = [
         experienceDescription: "Internship at Mark Lotse Landau"
     },
     {
+        experienceTag: "Study",
+        experienceYear: 2025,
+        experienceLink: "",
+        experienceLinkText: "",
+        experienceDescription: "Since October 2025, I have been continuing my studies at Muthesius University in Kiel with a master's degree program focusing on interactive information design."
+    },
+    {
         experienceTag: "Freelancing",
         experienceYear: 2025,
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "I am working as a freelancer since the beginning of 2025 for different clients"
-    }
+    } 
 ];
 
 

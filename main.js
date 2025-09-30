@@ -364,7 +364,7 @@ const projectsEntries = [
         id: 11,
         projectPage: "projects/technoarena.html",
         projectTitle: "TECHNOarena",
-        projectCoverimage: "img/sh-technoarena-3dmodell-uebersichtarena-begrueßungslicht-coverbild-800.webp",
+        projectCoverimage: "img/sh-technoarena-ausgang-800.webp",
         alt: "TECHNOarena",
         projectTag: ["Installation", "Exhibition"],
         projectYear: 2025,

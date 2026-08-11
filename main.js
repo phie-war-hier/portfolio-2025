@@ -55,8 +55,6 @@ function layoutShow() {
                                         <h4>Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
-                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
-                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
                                         </div>
                                     </div>
                                 `;
@@ -81,8 +79,6 @@ function layoutProjects() {
                                         <h4>Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
-                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
-                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
                                         </div>
                                     </div>
                                     <div onclick="navToProjects()" class="nav-element top active">Projects</div>`;
@@ -106,8 +102,6 @@ function layoutProjectDetails() {
                                         <h4 onclick="navToShowreel()">Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
-                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="../icon/behance.svg"></a>
-                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="../icon/github.svg"></a>
                                         </div>
                                     </div>
                                 `;
@@ -126,8 +120,6 @@ function layoutExperience() {
                                         <h4>Sophie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
-                                            <a target="_blank" href="https://www.behance.net/sophiehumbert1"><img src="icon/behance.svg"></a>
-                                            <a target="_blank" href="https://github.com/phie-war-hier"><img src="icon/github.svg"></a>
                                         </div>
                                     </div>
                                     <div onclick="navToProjects()" class="nav-element top">Projects</div>
@@ -362,6 +354,38 @@ const projectsEntries = [
     },
     {
         id: 11,
+        projectPage: "projects/glowingtraces.html",
+        projectTitle: "Glowing Traces – Digital Twin Meets Fjord",
+        projectCoverimage: "img/sh-glowingtraces-coverbild-800.webp",
+        alt: "Glowing Traces",
+        projectTag: ["Installation", "Data Vis"],
+        projectYear: 2025,
+        projectContext: "Glowing Traces was created as a group project in the “Interactive Information Design” master’s program. The project was developed in collaboration with Prof. Dr. Stephan Juricke and Prof. Dr. Florian Schütte from GEOMAR Helmholtz Center for Ocean Research Kiel.",
+        projectClient: "",
+        projectClientLink: "",
+        projectPeople: ["Katharina Fedde, Sophie Humbert"],
+        projectLink: "",
+        projectLinkText: "",
+        projectDescription: "How does the sea reveal its condition to us? Glowing Traces brings the health of the fjord to life through the growth of phytoplankton — microscopic algae that respond to salinity and temperature — in the form of a interactive installation."        
+    },
+    {
+        id: 12,
+        projectPage: "projects/recoastsandbox.html",
+        projectTitle: "Recoast Sandbox",
+        projectCoverimage: "img/sh-recoastsandbox-coverbild-800.webp",
+        alt: "Recoast Sandbox",
+        projectTag: ["Interaction", "Data Vis"],
+        projectYear: 2026,
+        projectContext: "Recoast Sandbox was created as a group project in the “Interactive Information Design” master’s program. The project was developed in collaboration with Dr. Claudia Wolff and the Recoast Vision Team from CAU.",
+        projectClient: "",
+        projectClientLink: "",
+        projectPeople: ["Sophie Humbert, Lennart Saken"],
+        projectLink: "",
+        projectLinkText: "",
+        projectDescription: "Recoast Sandbox is an interactive tool that helps affected communities and policymakers work together to develop approaches to coastal protection. Here, you can test out visions for the future and experience the consequences of your decisions firsthand."        
+    },
+    {
+        id: 13,
         projectPage: "projects/technoarena.html",
         projectTitle: "TECHNOarena",
         projectCoverimage: "img/sh-technoarena-ausgang-800.webp",

@@ -391,79 +391,113 @@ const projectsEntries = [
 const experienceEntries = [
     {
         experienceTag: "Graduation",
-        experienceYear: 2024,
+        experienceYearStart: 2024,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Bachelor of Arts Communication Design at the Faculty of Design Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Publication",
-        experienceYear: 2024,
+        experienceYearStart: 2024,
+        experienceYearEnd: "",
         experienceLink: "https://diglib.eg.org/items/fc058e21-331d-45bf-b00b-35c58487e1af",
-        experienceLinkText: "",
+        experienceLinkText: "To the publication",
         experienceDescription: "Embedded temporal data visualizations in an urban environment for casual exploration"
     },
     {
         experienceTag: "Job position",
-        experienceYear: 2024,
+        experienceYearStart: 2024,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Internship",
-        experienceYear: 2024,
+        experienceYearStart: 2024,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Internship as UX Designer at sovanta AG in Heidelberg"
     },
     {
         experienceTag: "Job position",
-        experienceYear: 2023,
+        experienceYearStart: 2023,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Student assistant in design at the Human Data Interaction Lab at Mannheim University of Applied Sciences"
     },
     {
         experienceTag: "Event",
-        experienceYear: 2022,
+        experienceYearStart: 2022,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Captcha Design Festival at the Faculty of Design Mannheim"
     },
     {
         experienceTag: "Job position",
-        experienceYear: 2022,
+        experienceYearStart: 2021,
+        experienceYearEnd: "– 2022",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Working student in sales at Markthaus Mannheim gGmbH"
     },
     {
         experienceTag: "Internship",
-        experienceYear: 2019,
+        experienceYearStart: 2019,
+        experienceYearEnd: "",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "Internship at Mark Lotse Landau"
     },
     {
+        experienceTag: "Exhibition",
+        experienceYearStart: 2024,
+        experienceYearEnd: "– 2025",
+        experienceLink: "http://127.0.0.1:5500/projects/marbalance.html?id=6",
+        experienceLinkText: "To the Marbalance project",
+        experienceDescription: "Marbalance was displayed at the Technoseum Mannheim as part of the special exhibition “Spiel mit!”"
+    }, 
+    {
         experienceTag: "Study",
-        experienceYear: 2025,
+        experienceYearStart: 2025,
+        experienceYearEnd: "– now",
         experienceLink: "",
         experienceLinkText: "",
-        experienceDescription: "Since October 2025, I have been continuing my studies at Muthesius University in Kiel with a master's degree program focusing on interactive information design."
+        experienceDescription: "Since October 2025, I have been continuing my studies at Muthesius University in Kiel with a master's degree program focusing on interactive information design"
     },
     {
         experienceTag: "Freelancing",
-        experienceYear: 2025,
+        experienceYearStart: 2025,
+        experienceYearEnd: "– now",
         experienceLink: "",
         experienceLinkText: "",
         experienceDescription: "I am working as a freelancer since the beginning of 2025 for different clients"
+    },
+    {
+        experienceTag: "Exhibition",
+        experienceYearStart: 2026,
+        experienceYearEnd: "",
+        experienceLink: "http://127.0.0.1:5500/projects/recoastsandbox.html?id=12",
+        experienceLinkText: "To the Recoast Sandbox project",
+        experienceDescription: "Recoast Sandbox was displayed in the exhibition “Einblick / Ausblick 2026” at the Muthesius University of Fine Arts and Design"
+    }, 
+    {
+        experienceTag: "Job position",
+        experienceYearStart: 2026,
+        experienceYearEnd: "– now",
+        experienceLink: "",
+        experienceLinkText: "",
+        experienceDescription: "Working Student in Public Relations for the Priority research area KiNSIS at the CAU"
     } 
 ];
 
 
 projectsEntries.sort((a, b) => b.projectYear - a.projectYear);
-experienceEntries.sort((a, b) => b.experienceYear - a.experienceYear);
+experienceEntries.sort((a, b) => b.experienceYearStart - a.experienceYearStart);
 
 // Funktion zum Anzeigen aller Einträge
 function showAllEntries() {
@@ -620,10 +654,10 @@ document.addEventListener('DOMContentLoaded', function () {
             entryDiv.innerHTML = `
             <div class="experience-tags">  
                 <div class="tag">${entry.experienceTag}</div>
-                <p class="experience-year">${entry.experienceYear}</p>
+                <p class="experience-year">${entry.experienceYearStart} ${entry.experienceYearEnd}</p>
             </div>
             <p class="description">${entry.experienceDescription}</p>
-             ${entry.experienceLink ? `<p class="description"><a target="_blank" href="${entry.experienceLink}">Publication</a></p>` : ""}
+             ${entry.experienceLink ? `<p class="description"><a target="_blank" href="${entry.experienceLink}">${entry.experienceLinkText}</a></p>` : ""}
         `;
 
             // Den Eintrag in das Portfolio-Div einfügen

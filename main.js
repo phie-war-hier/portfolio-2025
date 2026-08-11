@@ -52,7 +52,7 @@ function layoutShow() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
                                     <div onclick="navToShowreel()" class="nav-element top active">
-                                        <h4>Sophie Humbert</h4>
+                                        <h4>Phie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
                                         </div>
@@ -76,7 +76,7 @@ function layoutProjects() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
                                     <div onclick="navToShowreel()" class="nav-element top">
-                                        <h4>Sophie Humbert</h4>
+                                        <h4>Phie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
                                         </div>
@@ -99,7 +99,7 @@ function layoutProjectDetails() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
                                     <div class="nav-element top">
-                                        <h4 onclick="navToShowreel()">Sophie Humbert</h4>
+                                        <h4 onclick="navToShowreel()">Phie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="../icon/mail.svg"></a>
                                         </div>
@@ -117,7 +117,7 @@ function layoutExperience() {
     const navContainerTop = document.querySelector('.nav-container-top');
     navContainerTop.innerHTML = `
                                     <div onclick="navToShowreel()" class="nav-element top">
-                                        <h4>Sophie Humbert</h4>
+                                        <h4>Phie Humbert</h4>
                                         <div class="socials">
                                             <a target="_blank" href="mailto:sophie-humbert@posteo.de"><img src="icon/mail.svg"></a>
                                         </div>
@@ -212,7 +212,7 @@ const projectsEntries = [
         projectYear: 2023,
         projectContext: "sMArt roots is an initiative of the Smart City Lab of the City of Mannheim and the Human Data Interaction Lab (HDIL).",
         projectClient: "Smart City Mannheim",
-        projectPeople: [" Till Nagel", " Christoph Huber", " Sophie Humbert"],
+        projectPeople: [" Till Nagel", " Christoph Huber", " Phie Humbert"],
         projectLink: "https://www.hdilab.org/projects/smart-roots/",
         projectLinkText: "Project sMArt roots at the HDIL",
         projectDescription: "sMArt roots is a project by Smart City Mannheim and HDIL. The aim was to create interactive visualizations with the city's citizens as the focus group."
@@ -227,7 +227,7 @@ const projectsEntries = [
         projectYear: 2024,
         projectContext: "The AR Data Experience Point is a research project of the Human Data Interaction Lab at Mannheim University of Applied Sciences.",
         projectClient: "",
-        projectPeople: ["Till Nagel", " Christoph Huber", " Ekkehard Petzold", " Sophie Humbert"],
+        projectPeople: ["Till Nagel", " Christoph Huber", " Ekkehard Petzold", " Phie Humbert"],
         projectLink: "https://www.hdilab.org/projects/ar-dxp/",
         projectLinkText: "Project AR DXP at the HDIL",
         projectDescription: "The AR DXP at HDIL is a research work on embedded temporal data visualizations in an urban environment."
@@ -242,7 +242,7 @@ const projectsEntries = [
         projectYear: 2024,
         projectContext: " Irrlicht was created in 2024 as a bachelor's thesis supervised by Prof. Hartmut Wöhlbier and Prof. Dr. Till Nagel at the Faculty of Design Mannheim.",
         projectClient: "",
-        projectPeople: ["Sophie Humbert"],
+        projectPeople: ["Phie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "Irrlicht - A data-supported, interactive and immersive installation to raise awareness of the issue of light pollution."
@@ -257,7 +257,7 @@ const projectsEntries = [
         projectYear: 2023,
         projectContext: "The Rocket Deployer was developed in cooperation with a company in the semester development project at Mannheim University of Applied Sciences.",
         projectClient: "",
-        projectPeople: ["Design: Sophie Humbert", " Eddi Bludau", " Computer Science: Lauritz Fuchs", " Dominik Koschik", " Yan Wittmann", " Julian Komarek", " Jonas Fügen"],
+        projectPeople: ["Design: Phie Humbert", " Eddi Bludau", " Computer Science: Lauritz Fuchs", " Dominik Koschik", " Yan Wittmann", " Julian Komarek", " Jonas Fügen"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "The Rocket Deployer is a physical and digital web app builder that allows visitors to build an app in SAP BTP at trade fairs."
@@ -272,7 +272,7 @@ const projectsEntries = [
         projectYear: 2022,
         projectContext: "planta was designed as a group project in the Interactive Media course at the Faculty of Design Mannheim. The installation was shown in the exhibition Captcha 2022 at the Mannheimer Kunstverein.",
         projectClient: "",
-        projectPeople: ["Paco Gutiérrez Hardt", " Teresa Hoffmann", " Sophie Humbert"],
+        projectPeople: ["Paco Gutiérrez Hardt", " Teresa Hoffmann", " Phie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "planta is an interactive installation that makes it possible to create a playful synergy between nature and technology."
@@ -287,7 +287,7 @@ const projectsEntries = [
         projectYear: 2023,
         projectContext: "The game was developed as a group project in the “Games Night” course at the Faculty of Design in Mannheim.",
         projectClient: "",
-        projectPeople: ["Paco Gutiérrez Hardt (Design)", " Teresa Hoffmann (Design)", " Sophie Humbert (Design)", " Christian Fagherazzi (Computer science)"],
+        projectPeople: ["Paco Gutiérrez Hardt (Design)", " Teresa Hoffmann (Design)", " Phie Humbert (Design)", " Christian Fagherazzi (Computer science)"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "Marbalance is an interactive game in which a player has to avoid enemies with the help of a balancing board."
@@ -302,7 +302,7 @@ const projectsEntries = [
         projectYear: 2024,
         projectContext: "The Tetris Room was realized as a student research project at the Faculty of Design Mannheim.",
         projectClient: "",
-        projectPeople: ["Sophie Humbert"],
+        projectPeople: ["Phie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
@@ -317,7 +317,7 @@ const projectsEntries = [
         projectYear: 2023,
         projectContext: "The work was created in the winter semester 22/23 in the course Communication in Space at the Faculty of Design Mannheim.",
         projectClient: "",
-        projectPeople: ["Sophie Humbert"],
+        projectPeople: ["Phie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "A concept for an installation to raise awareness of the issue of underwater noise."
@@ -332,7 +332,7 @@ const projectsEntries = [
         projectYear: 2022,
         projectContext: "Captcha Design Festival is organized by students of the University of Applied Sciences Mannheim.",
         projectClient: "",
-        projectPeople: ["Michelle Michewicz, Julia Strauch, Lena Rass, Lara Tottewitz, Ronja Freundt, Moritz Schwall, Daniel Klose, Sophie Humbert"],
+        projectPeople: ["Michelle Michewicz, Julia Strauch, Lena Rass, Lara Tottewitz, Ronja Freundt, Moritz Schwall, Daniel Klose, Phie Humbert"],
         projectLink: "https://www.captcha-mannheim.de/",
         projectLinkText: "Captcha Design Festival website",
         projectDescription: "Captcha is a design festival organized by students of the university of applied sciences mannheim."
@@ -348,7 +348,7 @@ const projectsEntries = [
         projectContext: "Glowing Traces was created as a group project in the “Interactive Information Design” master’s program. The project was developed in collaboration with Prof. Dr. Stephan Juricke and Prof. Dr. Florian Schütte from GEOMAR Helmholtz Center for Ocean Research Kiel.",
         projectClient: "",
         projectClientLink: "",
-        projectPeople: ["Katharina Fedde, Sophie Humbert"],
+        projectPeople: ["Katharina Fedde, Phie Humbert"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "How does the sea reveal its condition to us? Glowing Traces brings the health of the fjord to life through the growth of phytoplankton — microscopic algae that respond to salinity and temperature — in the form of a interactive installation."        
@@ -364,7 +364,7 @@ const projectsEntries = [
         projectContext: "Recoast Sandbox was created as a group project in the “Interactive Information Design” master’s program. The project was developed in collaboration with Dr. Claudia Wolff and the Recoast Vision Team from CAU.",
         projectClient: "",
         projectClientLink: "",
-        projectPeople: ["Sophie Humbert, Lennart Saken"],
+        projectPeople: ["Phie Humbert, Lennart Saken"],
         projectLink: "",
         projectLinkText: "",
         projectDescription: "Recoast Sandbox is an interactive tool that helps affected communities and policymakers work together to develop approaches to coastal protection. Here, you can test out visions for the future and experience the consequences of your decisions firsthand."        
@@ -380,7 +380,7 @@ const projectsEntries = [
         projectContext: "The design concept of the TECHNOarena was created during my freelance work at the TECHNOSEUM Mannheim.",
         projectClient: "TECHNOSEUM Mannheim",
         projectClientLink: "https://www.technoseum.de/",
-        projectPeople: ["Sophie Humbert (Design), Conni Robe (Animation Illustrations)<br>TECHNOSEUM: Heike Morath (Graphic), Ulrich Plaputta (Graphic), Anna Tasja Kammholz (Project Lead), Eva Gramlich (Exhibition)"],
+        projectPeople: ["Phie Humbert (Design), Conni Robe (Animation Illustrations)<br>TECHNOSEUM: Heike Morath (Graphic), Ulrich Plaputta (Graphic), Anna Tasja Kammholz (Project Lead), Eva Gramlich (Exhibition)"],
         projectLink: "https://www.technoseum.de/",
         projectLinkText: "TECHNOarena",
         projectDescription: "The design concept of the TECHNOarena reflects the atmosphere of the future and gives each person the freedom to imagine. What will the world look like in the future?"        

@@ -308,21 +308,6 @@ const projectsEntries = [
         projectDescription: "The Tetris Room is a virtual exhibition on the classic Tetris with interactive elements."
     },
     {
-        id: 8,
-        projectPage: "projects/deepblue.html",
-        projectTitle: "Deep blue",
-        projectCoverimage: "img/sh-deep-blue-mushroom-coverbild-800.webp",
-        alt: "User Experience",
-        projectTag: ["3D", "Motion"],
-        projectYear: 2022,
-        projectContext: "The animation was created in the course Visualization with 3D at the Faculty of Design Mannheim.",
-        projectClient: "",
-        projectPeople: ["Sophie Humbert"],
-        projectLink: "",
-        projectLinkText: "",
-        projectDescription: "“deep blue” is an animation created with the 3D software Blender."
-    },
-    {
         id: 9,
         projectPage: "projects/overheardcatastrophe.html",
         projectTitle: "Overheard catastrophe",
